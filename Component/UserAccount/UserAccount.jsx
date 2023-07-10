@@ -129,7 +129,106 @@ const UserAccount = (props) => {
         </div>
       </div>
 
-
+      {/* Mobile View */}
+      <div className={styles.mobileView}>
+        <div className={styles.mobileView_login}>
+      
+          <Image src={player} className={styles.playerimg} alt="playerImage" />
+          <div className={styles.mobileView_login_container}>
+            <div className={styles.mobileView_login_left}>
+              <div className={styles.main_login_button}>
+                <div
+                  className={styles.Login_Button}
+                  style={{
+                    backgroundColor:
+                      userAccount === "login" && pathname !== "/forgot/"
+                        ? "var(--primary)"
+                        : null,
+                  }}
+                  onClick={() => {
+                    navigate("/login/");
+                    handleOnClickLogin();
+                  }}
+                >
+                  <h5>Login</h5>
+                </div>
+                {userAccount === "login" && pathname !== "/forgot/" ? (
+                  <div id="arrow4" className={styles.arrow}>
+                    <div></div>
+                  </div>
+                ) : null}
+              </div>
+              <div className={styles.main_signup_button}>
+                <div
+                  className={styles.SignUp_Button}
+                  style={{
+                    backgroundColor:
+                      userAccount === "signUp" || pathname === "/forgo/t"
+                        ? "var(--primary)"
+                        : null,
+                  }}
+                  onClick={() => {
+                    navigate("/signup/");
+                    handleOnClickSignUp();
+                  }}
+                >
+                  <h5>Sign Up</h5>
+                </div>
+                {userAccount === "signUp" || pathname === "/forgot" ? (
+                  <div id="arrow4" className={styles.arrow}>
+                    <div></div>
+                  </div>
+                ) : null}
+              </div>
+            </div>
+            <div className={styles.mobileView_login_right}>
+              <div className={styles.top}>
+                <div className={styles.header}>
+                  <div className={styles.greeting}>
+                    {pathname === "/forgot/" ? (
+                      <>
+                        <h3>Forgot Password?</h3>
+                        <h4>Enter Your details to reset</h4>
+                      </>
+                    ) : userAccount === "login" ? (
+                      <>
+                        <h3>Welcome,</h3>
+                        <h4>Login to continue!</h4>
+                      </>
+                    ) : (
+                      <>
+                        <h3>Create Account,</h3>
+                        <h4>Sign up to get started!</h4>
+                      </>
+                    )}
+                  </div>
+                </div>
+                <div className={styles.center_box}>
+                  {pathname === "/forgot/" ? (
+                    <ForgotPassword />
+                  ) : userAccount === "login" ? (
+                    <Login />
+                  ) : (
+                    <SignUp />
+                  )}
+                </div>
+              </div>
+              <div className={styles.footer}>
+                <h6>
+                  © 2023 &nbsp;
+                  <Link
+                    href={`${HOST}`}
+                    target="_blank"
+                    style={{ color: "black", textDecoration: "none" }}
+                  >
+                    www.oncricket.com
+                  </Link>
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
