@@ -4,7 +4,6 @@ import UserAccount from '../../Component/UserAccount/UserAccount'
 const index = () => {
   return (
     <UserAccount/>
-    
   )
 }
 
