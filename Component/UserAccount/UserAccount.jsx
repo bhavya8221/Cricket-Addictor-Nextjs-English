@@ -9,7 +9,7 @@ import HOST from "../../Constants/host";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Login from "./Login";
-import ForgotPassword from "./ForgotPassword";
+import ForgotPassword from "./Forgot/forgotPassword"
 import SignUp from "./SignUp";
 import Image from "next/image";
 

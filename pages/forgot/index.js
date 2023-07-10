@@ -1,8 +1,9 @@
 import React from 'react'
+import UserAccount from '../../Component/UserAccount/UserAccount'
 
 const Forgot = () => {
   return (
-    <div>Forgot</div>
+    <UserAccount />
   )
 }
 

@@ -1,21 +1,38 @@
 import React, { useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import DescriptionAlerts from "../../Common/alert/alert";
-
-import styles from  "./SignUp.module.scss";
+import styles from "./SignUp.module.scss";
 import Link from "next/link";
 import { signUpAPI } from "../../Constants/Api/Api";
+import {useRouter } from "next/router";
 const SignUp = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [showAlert, setShowAlert] = useState(false);
+  const [agree, setAgree] = useState(false);
   const [alertConfig, setAlertConfig] = useState({
     text: "",
   });
+const router =useRouter()
+
+  const checkboxHandler = () => {
+    setAgree(!agree);
+  };
 
   const handleSubmit = (e) => {
+    if (!agree) {
+      setShowAlert(true);
+      setAlertConfig({
+        text: "Please agree to the terms and conditions to submit the form.",
+        type: 'info'
+      });
+      setTimeout(() => {
+        setShowAlert(false);
+      }, 7000);
+      return;
+    }
     e.preventDefault();
     signUpAPI(name, email, password, confirmPassword)
       .then((res) => {
@@ -27,6 +44,7 @@ const SignUp = () => {
         });
         setTimeout(() => {
           setShowAlert(false);
+          router.replace("/login")
         }, 7000);
         setName("");
         setEmail("");
@@ -87,7 +105,7 @@ const SignUp = () => {
                 onChange={(e) => setConfirmPassword(e.target.value)}
               />
             </Form.Group>
-            <Form.Group className={styles.input_field_remember}>
+            <Form.Group className={styles.input_field_remember} onChange={checkboxHandler}>
               <Form.Check
                 type="checkbox"
                 label="I agree with Terms & conditions"
