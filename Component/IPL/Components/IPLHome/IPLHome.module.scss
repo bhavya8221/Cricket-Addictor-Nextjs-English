@@ -1,0 +1,30 @@
+.IPL_section {
+    // @include themify($themes) {
+    //     background: themed("bodyBackgroundColor");
+    //     // color: themed('textColor');
+    // }
+    background: var(--light);
+    .btn_view {
+        // margin-top: -15px;
+        margin-bottom: 15px;
+    }
+    .all_ipls_btn {
+        background-color: var(--light);
+        box-shadow: 0px 3.14286px 3.14286px rgba(0, 0, 0, 0.25);
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+        font-size: 20px;
+        font-style: italic;
+        padding: 8px;
+    }
+    @media only screen and (max-width:767px) {
+        .all_ipls_btn {
+            padding: 5px;
+            font-size: 10px;
+        }
+        .btn_view {
+            margin-top: -23px;
+        }
+    }
+}

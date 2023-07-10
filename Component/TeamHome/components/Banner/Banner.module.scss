@@ -1,0 +1,328 @@
+.flagImageRow {
+  // padding: 0px 30px;
+  display: flex;
+
+  // @include themify($themes) {
+  //   background: themed("bodyBackgroundColor");
+  //   // color: themed('textColor');
+  // }
+  .scrolflag {
+    display: flex;
+    width: 100%;
+    overflow: scroll;
+    // margin-top: -20px;
+    place-content: center;
+    // margin: 0px 20px;
+  }
+  .scrolflag::-webkit-scrollbar {
+    display: none;
+    /* Crome */
+  }
+  .scrolflag {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+  h6 {
+    // @include themify($themes) {
+    //   // color: themed('textColor');
+    // }
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+  }
+  .flagContain {
+    margin-left: 2px;
+    margin-right: 2px;
+    text-align: -webkit-center;
+    align-self: center;
+  }
+  .flagImage {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    // height: 80px;
+    width: fit-content;
+    border-radius: 50px;
+    // padding: 5px;
+    margin: 11px;
+    .img {
+      border-radius: inherit;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .col {
+      place-content: flex-start;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .flagImageRow {
+    padding: 0px 15px;
+    overflow: scroll;
+  }
+}
+
+.Banner {
+  @media only screen and (max-width: 1000px) {
+    .imageBanner {
+      width: auto !important;
+      display: block !important;
+      height: 350px;
+    }
+  }
+  @media only screen and (min-width: 1000px) and (max-width: 1500px) {
+    .imageBanner {
+      width: 100% !important;
+      display: block !important;
+      height: 300px;
+    }
+  }
+  .imageBanner {
+    width: 100%;
+    // display: flex;
+  }
+  .link_color {
+    color: black;
+    text-decoration: none;
+  }
+  .bannerImage {
+    width: 100%;
+    overflow-x: auto;
+    display: flex;
+    align-items: center;
+    .teamBannerDetails {
+      position: absolute;
+      text-align: center;
+      // height: 100%;
+      align-items: center;
+      .details {
+        // margin-top: -385px;
+        // margin-top: -258px;
+        // margin-bottom: 300px;
+        .social-icons {
+          color: var(--light);
+          width: fit-content;
+          .icon {
+            margin: 0px 9px;
+          }
+        }
+        h1 {
+          text-align: left;
+          color: var(--light);
+          // line-height: 35px;
+          margin: 0;
+          // font-size: 34px;
+          font-size: 27px;
+          font-weight: 700;
+        }
+        .info {
+          // margin: 72px 80px;
+          margin: 0 20px;
+          .official_site,
+          .trophy {
+            color: var(--light);
+            background-color: #ef4123;
+            width: fit-content;
+            padding: 10px 20px;
+            border-radius: 10px;
+            margin: 8px;
+            margin-left: 0px;
+          }
+          .trophy {
+            background-color: var(--light);
+            color: #193684;
+            padding: 4px 20px;
+          }
+          h2 {
+            color: var(--light);
+            // line-height: 24px;
+            margin: 0;
+            // font-size: 17px;
+            font-size: 15px;
+            font-weight: 700;
+            text-align: start;
+            padding-left: 8px;
+          }
+        }
+      }
+    }
+  }
+  .bannerImage::-webkit-scrollbar {
+    display: none;
+    /* Crome */
+  }
+  .bannerImage {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+}
+
+.player_row {
+  display: flex;
+}
+.player_row {
+  display: flex;
+}
+.player_col1 {
+  background-color: var(--primary);
+  color: var(--light);
+  // width: 20%;
+  h5 {
+    text-align: center;
+    margin: 0px !important;
+    font-weight: 600;
+    font-size: 25px;
+    padding: 8px 10px;
+  }
+}
+.player_col2 {
+  background-color: #d9d9d9;
+  display: flex;
+  // width: 80%;
+  overflow: auto;
+  h5 {
+    cursor: pointer;
+    background-color: var(--light);
+    padding: 8px 10px;
+    margin: 5px 10px;
+    font-weight: 600;
+    font-size: 25px;
+    padding: 3px 50px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    white-space: nowrap;
+  }
+}
+.player_col2::-webkit-scrollbar {
+  display: none;
+  /* Crome */
+}
+.player_col2 {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+.PlayerBanner {
+  // margin-top: 30px;
+
+  @media only screen and (max-width: 1000px) {
+    .imageBanner {
+      width: auto !important;
+      display: block !important;
+    }
+  }
+  .imageBanner {
+    width: 100%;
+    margin-top: -269px;
+    height: 300px;
+    // display: flex;
+  }
+  .PlayerBannerImage::-webkit-scrollbar {
+    display: none;
+    /* Crome */
+  }
+  .PlayerBannerImage {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+  .PlayerBannerImage {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    .teamBannerDetails {
+      // position: absolute;
+      // margin-left: 100px;
+      // margin-right: 100px;
+      margin-top: 35px;
+      position: sticky;
+      display: flex;
+      //   justify-content: space-between;
+      .detailsLeft {
+        // margin-top: -298px;
+        width: 50%;
+        color: var(--light);
+        .backText {
+          width: fit-content;
+          color: var(--secondary);
+          margin-left: 30px;
+          // font-size: 187px;
+          // text-align: center;
+        }
+        img {
+          // margin-top: -481px;
+        }
+        h6 {
+          // width: fit-content;
+          // margin-top: -232px;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          background-color: var(--light);
+          border-radius: 6px;
+          font-size: 20px;
+          color: #193684;
+          padding: 1px 20px;
+          // white-space: nowrap;
+          text-align: center;
+          font-weight: 700;
+        }
+      }
+      .detailsRight {
+        width: 50%;
+        // margin-top: -298px;
+        color: var(--light);
+        // display: flex;
+        // justify-content: flex-end;
+        /* margin: initial; */
+        // margin-left: 731px;
+        .Flex-style {
+          // width: inherit;
+          margin: 20px;
+          .info {
+            color: var(--secondary);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            background-color: var(--light);
+            border-radius: 6px;
+            //   display: inline-block;
+            padding: 4px 24px;
+            // padding-right: 399px;
+            // white-space: nowrap;
+          }
+        }
+        .main_text {
+          //   display: flex;
+        }
+      }
+      .main_text {
+        display: flex;
+        .main_left_text {
+          margin-left: 50px;
+          margin-right: 50px;
+          .left_text {
+            text-align: left;
+            font-size: 17px;
+            color: #e6e6e6;
+            opacity: 0.7;
+            margin-bottom: 0px;
+            white-space: nowrap;
+          }
+        }
+        .main_Right_text {
+          //   margin-left: 50px;
+          //   margin-right: 50px;
+          .right_text {
+            text-align: left;
+            font-size: 17px;
+            color: var(--light);
+            margin-bottom: 0px;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+}

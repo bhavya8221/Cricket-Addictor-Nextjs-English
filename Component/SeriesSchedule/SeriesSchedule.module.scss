@@ -1,0 +1,112 @@
+.seriesSchedule_section {
+  // @include themify($themes) {
+  //     background: themed("bodyBackgroundColor");
+  //     // color: themed('textColor');
+  // }
+  background-color: white;
+  .title_overflow {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .RowGrid {
+    padding-top: 20px;
+    margin: 10px;
+    justify-content: space-between;
+  }
+  .liveScore_section .custom_live_card:hover {
+    height: 233px;
+    transition: 400ms linear;
+    .match_center {
+      display: flex !important;
+      transition: 500ms linear;
+    }
+    .upper_row {
+      transition: 200ms linear;
+    }
+  }
+  .status {
+    text-transform: capitalize;
+  }
+  .link_color {
+    color: black;
+    text-decoration: none;
+  }
+  .schedule_text {
+    color: var(--primary);
+    width: auto;
+    margin-right: 10px;
+    font-style: italic;
+    font-weight: 700;
+  }
+  .SSplayer_gender {
+    justify-content: space-evenly;
+    // width: 240px;
+    // height: 50px;
+    background-color: var(--primary);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+  }
+  .ads_bx {
+    height: 100%;
+    background-color: black;
+  }
+  .ads_bx h4 {
+    color: var(--light);
+    padding: 10px;
+  }
+  .Rt20 {
+    background-color: var(--light);
+    align-self: center;
+    width: 25%;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 0px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .series_title {
+    // @include themify($themes) {
+    //     background: themed("bodyBackgroundColor");
+    //     // color: themed('textColor');
+    // }
+    // color: black;
+    font-weight: 700;
+    font-size: 24px;
+    width: auto;
+    margin-right: 10px;
+  }
+  .underline {
+    background-color: rgb(0, 0, 0);
+    height: 2px;
+    margin-left: 22px;
+    margin-right: 22px;
+    margin-bottom: 10px;
+    margin-top: -5px;
+    width: auto;
+  }
+  .fil {
+    text-align: -webkit-right;
+  }
+  @media only screen and (max-width: 767px) {
+    .fil {
+      text-align: -webkit-left;
+      margin-bottom: 10px;
+    }
+    .series_title {
+      font-size: 14px;
+    }
+    .SSplayer_gender {
+      height: 38px;
+      margin-left: 22px;
+    }
+    .ads_bx {
+      height: 300px !important;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+}

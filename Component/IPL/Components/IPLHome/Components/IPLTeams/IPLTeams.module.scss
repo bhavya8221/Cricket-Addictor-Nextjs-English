@@ -1,0 +1,320 @@
+.ipl_main_div {
+    // margin-left: 20px;
+    // margin-right: 20px;
+    .link_color {
+        color: black;
+        text-decoration: none;
+    }
+    img {
+        padding: 5px;
+    }
+    .center_box {
+        text-align: -webkit-center;
+    }
+    @mixin commonproperty {
+        // width: 94%;
+        // height: 370px;
+        margin: 15px;
+        border-radius: 10px;
+        padding: 10px 0px;
+        // margin-top: 15px;
+    }
+    .box_1 {
+        background: #F9A70C;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        height: 270px;
+        @include commonproperty;
+    }
+    .box_2 {
+        background: #056DB5;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 10px;
+        @include commonproperty;
+    }
+    .box_3 {
+        background: #0A1C33;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        @include commonproperty;
+    }
+    .box_4 {
+        background: #0B6B7E;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        @include commonproperty;
+    }
+    .box_5 {
+        background: #0B6B7E;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        @include commonproperty;
+    }
+    .box_6 {
+        background: #0A4587;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        @include commonproperty;
+    }
+    .box_7 {
+        background: #E41C1E;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        @include commonproperty;
+    }
+    .box_8 {
+        background: #034EA2;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        @include commonproperty;
+    }
+    .box_9 {
+        background: #000000;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        @include commonproperty;
+    }
+    .box_10 {
+        background: #0A4587;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        @include commonproperty;
+    }
+    .img1 {
+        // padding: 0px 20px 0 20px;
+        text-align: center;
+    }
+    .card_img {
+        // width: 240px;
+        height: 135px;
+    }
+    img.card_img.card_img2 {
+        width: 216px;
+        height: 155px;
+        margin-top: -26px;
+    }
+    @mixin heading_commonproperty {
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 21px;
+        line-height: 23px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .card_heading {
+        @include heading_commonproperty;
+        // margin: 20px 0px 10px 0px;
+        margin: 10px;
+    }
+    .sub_heading {
+        @include heading_commonproperty()
+    }
+    .first_block {
+        width: 82%;
+        height: 47px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        margin: 10px 0px 0px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main_box {
+        text-align: -webkit-center;
+    }
+    .medal {
+        // width: 12px;
+        height: 32px;
+    }
+    .card_num {
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        color: #000000;
+        padding-top: 15px;
+        padding-left: 10px;
+    }
+    //     @media only screen and (max-width:767px) {
+    //         .content {
+    //             height: 200px;
+    //             display: flex;
+    //             flex-direction: row;
+    //             justify-content: center;
+    //             align-items: center;
+    //         }
+    //         .img1 {
+    //             padding: 0;
+    //             width: 35%;
+    //         }
+    //         img.card_img.card_img2 {
+    //             width: 100%;
+    //             height: 100%;
+    //             margin-top: 0px;
+    //         }
+    //         @mixin heading_commonproperty {
+    //             font-size: 16px;
+    //             line-height: 19px;
+    //         }
+    //         .card_heading {
+    //             margin: 0;
+    //             @include heading_commonproperty;
+    //         }
+    //         .sub_heading {
+    //             @include heading_commonproperty;
+    //         }
+    //         .main_box {
+    //             width: 65%;
+    //         }
+    //         .card_img {
+    //             // width: 75%;
+    //             height: 75%;
+    //         }
+    //         .first_block {
+    //             width: 156px;
+    //             height: 30px;
+    //             border-radius: 5px;
+    //         }
+    //         .medal {
+    //             width: 7px;
+    //             height: 16px;
+    //         }
+    //         .card_num {
+    //             font-size: 10px;
+    //             line-height: 14px;
+    //         }
+    //     }
+    //     @media (min-width: 425px) and (max-width: 576px) {
+    //         .img1 {
+    //             width: 50%;
+    //         }
+    //         .card_img {
+    //             // width: 41%;
+    //             height: 41%;
+    //         }
+    //         img.card_img.card_img2 {
+    //             width: 74%;
+    //             height: 87%;
+    //             margin-top: -5px;
+    //         }
+    //         .main_box {
+    //             width: 50%;
+    //             text-align: unset;
+    //         }
+    //         .card_heading {
+    //             margin: 0 0 0 13px;
+    //             text-align: unset;
+    //         }
+    //         .sub_heading {
+    //             text-align: unset;
+    //             margin-left: 12px;
+    //         }
+    //     }
+    //     @media (min-width: 768px) and (max-width: 1100px) {
+    //         .content {
+    //             height: 360px;
+    //         }
+    //         .card_img {
+    //             width: 55%;
+    //             height: 55%;
+    //         }
+    //         .img1 {
+    //             padding: 40px 20px 0 20px;
+    //         }
+    //         img.card_img.card_img2 {
+    //             width: 87%;
+    //             height: 87%;
+    //             margin-top: -16px;
+    //         }
+    //         @mixin heading_commonproperty {
+    //             font-size: 18px;
+    //             line-height: 22px;
+    //         }
+    //         .card_heading {
+    //             @include heading_commonproperty;
+    //             margin: 14px 0 5px 0;
+    //         }
+    //         .sub_heading {
+    //             @include heading_commonproperty;
+    //         }
+    //         .first_block {
+    //             height: 46px;
+    //             margin-top: 16px;
+    //         }
+    //         .medal {
+    //             width: 12px;
+    //             height: 20px;
+    //         }
+    //         .card_num {
+    //             font-size: 8px;
+    //             line-height: 12px;
+    //             padding-top: 18px;
+    //         }
+    //     }
+    // }
+    // @media only screen and (max-width:767px) {
+    //     .main_div {
+    //         margin-left: 10px;
+    //         margin-right: 10px;
+    //     }
+    // }
+}
+
+.Rtype_group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    // margin-left: 25px;
+    // margin-right: 25px;
+}
+
+.Rplayer_gender {
+    justify-content: space-evenly;
+    // width: 250px;
+    // height: 50px;
+    background-color: var(--primary);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    // margin-right: 30px;
+    text-align: center;
+    padding: 5px 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@mixin test_commonproperty {
+    background-color: var(--light);
+    align-self: center;
+    padding: 10px 10px;
+    width: 100px;
+    border-radius: 5px;
+    margin-bottom: 0px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.Rmen {
+    @include test_commonproperty;
+}
+
+.Rwomen {
+    @include test_commonproperty;
+}
+
+// @media(max-width:779px) {
+//     .margin {
+//         margin-left: 5px !important;
+//         margin-right: 5px !important;
+//     }
+//     .Rplayer_gender {
+//         height: 38px;
+//     }
+//     @mixin test_commonproperty {
+//         font-weight: 400;
+//     }
+//     .Rmen {
+//         @include test_commonproperty;
+//     }
+//     .Rwomen {
+//         @include test_commonproperty;
+//     }
+//     .Rplayer_gender {
+//         margin-right: 20px;
+//     }
+// }

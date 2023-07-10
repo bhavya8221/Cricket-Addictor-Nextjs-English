@@ -1,0 +1,52 @@
+// h3{
+//     margin: 0;
+//     padding: 10px 0px;
+// }
+.VideoCom {
+    .team_a {
+        margin-left: 3px;
+        background-color: var(--light);
+        align-self: center;
+        padding: 4px 12px 4px 12px;
+        border-radius: 5px;
+        margin-bottom: 0px;
+    }
+    .justi {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .H3 {
+        color: var(--primary);
+        font-style: italic;
+        font-size: 28px;
+        margin-top: 20px;
+    }
+    .team_b {
+        margin-right: 3px;
+        background-color: var(--light);
+        align-self: center;
+        padding: 4px 12px 4px 12px;
+        border-radius: 5px;
+        margin-bottom: 0px;
+    }
+    .player_team {
+        justify-content: space-evenly;
+        // width: 250px;
+        height: 40px;
+        background-color: var(--primary);
+        border-radius: 5px;
+        // margin-left: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+    @media only screen and (max-width: 767px) {
+        .justi {
+            flex-direction: column;
+        }
+        h3{
+            margin: 0;
+    padding: 5px 0px;
+        }
+    }
+}

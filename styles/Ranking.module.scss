@@ -1,0 +1,166 @@
+.ranking_section {
+    // margin-left: 30px;
+    // margin-right: 30px;
+    background-color: white;
+    .Rtype_group {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 0px 15px ;
+    }
+    .Rplayer_gender {
+        justify-content: space-evenly;
+        // width: 250px;
+        // height: 38px;
+        background-color: var(--primary);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        margin-right: 0px;
+        // margin: 10px 0px;
+    }
+    .Ricc_type {
+        justify-content: space-evenly;
+        // width: auto;
+        // height: 38px;
+        // margin: 10px 0px;
+        margin-top: 10px;
+        background-color: #D9D9D9;
+        border: 1px solid var(--primary);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+    }
+    @mixin test_commonproperty {
+        background-color: var(--light);
+        align-self: center;
+        // padding: 4px 12px 4px 12px;
+        width: 80px;
+        padding: 6px;
+        border-radius: 5px;
+        margin-bottom: 0px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    .Rtest {
+        @include test_commonproperty;
+    }
+    .Rt20 {
+        @include test_commonproperty;
+        padding: 4px 20px 4px 20px;
+    }
+    .Rodi {
+        @include test_commonproperty;
+        padding: 4px 20px 4px 20px;
+    }
+    @mixin bat_bowl_commonproperty {
+        text-align: center;
+        // padding: 12px 12px 12px 12px;
+        padding: 10px;
+        // width: 80px;
+        font-size: 16px;
+        white-space: nowrap;
+    }
+    .Rteam {
+        border-radius: 5px 0px 0px 5px;
+        @include bat_bowl_commonproperty;
+        background-color: var(--light);
+        align-self: center;
+        // padding: 8px 12px 7px 12px;
+        margin-bottom: 0px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    .Rbatting {
+        border-radius: 0px;
+        @include bat_bowl_commonproperty;
+        background-color: var(--light);
+        align-self: center;
+        // padding: 8px 12px 7px 12px;
+        margin-bottom: 0px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    .Rbowling {
+        background-color: var(--light);
+        align-self: center;
+        border-radius: 0px 0px 0px 0px;
+        margin-bottom: 0px;
+        @include bat_bowl_commonproperty;
+        // padding: 8px 12px 7px 12px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    .Rallrounder {
+        // background-color: var(--light);
+        // align-self: center;
+        // // text-align: center;
+        // // padding: 8px 12px 7px 12px;
+        // @include bat_bowl_commonproperty;
+        // border-radius: 0px 5px 5px 0px;
+        // margin-bottom: 0px;
+        // // width: auto;
+        // // font-size: 16px;
+        // font-weight: 600;
+        border-radius: 0px 5px 5px 0px;
+        background-color: var(--light);
+        align-self: center;
+        // border-radius: 0px 0px 0px 0px;
+        margin-bottom: 0px;
+        @include bat_bowl_commonproperty;
+        // padding: 8px 12px 7px 12px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    @media(max-width:779px) {
+        // .margin {
+        //     margin-left: 5px !important;
+        //     margin-right: 5px !important;
+        // }
+        // .Rplayer_gender {
+        //     height: 38px;
+        // }
+        // .Ricc_type {
+        //     height: 40px;
+        // }
+        .Rtype_group {
+            align-items: center;
+        }
+        .Rplayer_gender {
+            align-self: center;
+        }
+        @mixin test_commonproperty {
+            font-weight: 400;
+        }
+        .Rtest {
+            @include test_commonproperty;
+        }
+        .Rt20 {
+            @include test_commonproperty;
+        }
+        .Rodi {
+            @include test_commonproperty;
+        }
+        @mixin bat_bowl_commonproperty {
+            padding: 9px 12px 9px 12px;
+            font-weight: 400;
+        }
+        .Rteam {
+            @include bat_bowl_commonproperty;
+        }
+        .Rbatting {
+            @include bat_bowl_commonproperty;
+        }
+        .Rbowling {
+            @include bat_bowl_commonproperty;
+        }
+        .Rallrounder {
+            @include bat_bowl_commonproperty;
+        }
+    }
+    @media(min-width:767px) {
+        .Rtype_group {
+            // margin-bottom: -32px;
+        }
+    }
+}

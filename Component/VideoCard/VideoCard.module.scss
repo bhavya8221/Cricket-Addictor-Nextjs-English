@@ -1,0 +1,61 @@
+.videoCard_section {
+  .v_icon {
+    margin-top: -3px;
+    font-size: 12px;
+  }
+  .Vtime {
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .Vcustom_card {
+    width: 100%;
+    height: 170px;
+    padding: 0px;
+    text-align: center;
+  }
+  .Vimage_card {
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+  }
+  .play {
+    width: 45px;
+    height: 45px;
+    margin-top: -65px;
+  }
+  .Vtitle-card {
+    font-size: 14px;
+    font-weight: 700;
+    // margin-top: 5px;
+    // margin-bottom: 5px;
+    // margin-left: 5px;
+    // margin-right: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: none;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  .Vdate-card {
+    font-size: 10px;
+    font-weight: 700;
+    margin-bottom: 0px;
+  }
+}
+
+.videoCard_section:hover {
+  .Vimage-card {
+    height: 70%;
+  }
+  .play {
+    margin-top: -20px;
+  }
+  .Vtitle-card {
+    display: -webkit-box;
+  }
+  .Vtime {
+    display: flex;
+  }
+}

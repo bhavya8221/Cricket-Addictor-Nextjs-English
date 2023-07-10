@@ -1,0 +1,35 @@
+.MenuOptionsNew {
+  width: 100%;
+    overflow: auto;
+
+  .menuOptionNewRow {
+    display: flex;
+    margin: 0px 5px;
+  
+
+    .menucontainActive {
+      color: var(--primary) !important;
+      border-bottom: 3px solid var(--primary) ;
+    }
+    .menucontain {
+      white-space: nowrap;
+      cursor: pointer;
+      text-transform: capitalize;
+      margin: 0px 5px;
+      padding-top: 8px;
+      padding-bottom: 5px;
+      font-weight: 700;
+      color: #4d4d4d;
+    }
+  }
+}
+.MenuOptionsNew::-webkit-scrollbar {
+  display: none;
+  /* Crome */
+}
+.MenuOptionsNew {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}

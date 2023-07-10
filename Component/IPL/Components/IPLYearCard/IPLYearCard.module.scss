@@ -1,0 +1,55 @@
+.IPLYearCard_section{
+    // margin-left: 25px ;
+    // margin-right: 25px;
+    background-color: var(--light);
+    .first,
+    .second,
+    .third,
+    .fourth,
+    .fifth {
+        padding: 20px;
+        text-align: center;
+    }
+    .first {
+        background-color: var(--secondary);
+    }
+    .link_color{
+        text-decoration: none;
+    color: inherit;    }
+    .child_IPL {
+        border-radius: 10px;
+        height: 260px;
+        width: 94%;
+        // margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .center_box {
+        text-align: -webkit-center;
+    }
+    .child_IPL h3 {
+        font-size: 46px;
+        font-weight: 700;
+        color: var(--light);
+    }
+    .bck_white a {
+        text-decoration: none;
+        padding: 5px;
+        background-color: var(--light);
+        color: black;
+        border-radius: 10px;
+        display: block;
+        max-width: 240px;
+        margin: auto;
+    }
+    .bck_white {
+        margin: 10px 0;
+        // margin-top: 20px;
+        padding: 10px;
+    }
+    .tropy_img {
+        width: 10px;
+        height: 19px;
+    }
+}

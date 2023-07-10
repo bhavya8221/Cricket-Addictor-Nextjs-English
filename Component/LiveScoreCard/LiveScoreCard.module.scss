@@ -1,0 +1,394 @@
+.liveScore_section {
+  .live_text {
+    label {
+      margin-right: 2px;
+      position: absolute;
+      left: 8px;
+    }
+  }
+  .form-switch .form-check-input {
+    margin-left: 0;
+  }
+  .form-check .form-check-input {
+    margin-left: 0;
+  }
+  .custom_live_card:hover {
+    height: 233px !important;
+    transition: 400ms linear;
+    .match_center {
+      visibility: visible;
+      height: auto !important;
+      width: 190px;
+      transition: 300ms linear;
+    }
+  }
+  .link_color {
+    color: var(--light);
+  }
+  .form-check .form-check-input {
+    float: right !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .form-check {
+    margin: 0;
+    padding-left: 0.1em !important;
+  }
+  input:focus,
+  textarea:focus,
+  select:focus {
+    outline: none;
+  }
+  .form-check-input:checked {
+    background-color: #e79e9b !important;
+    border: none !important;
+  }
+  .match_center {
+    height: 0px !important;
+    visibility: hidden;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    width: 95%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  .match_center_text {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--light);
+    margin-bottom: 0px;
+    cursor: pointer;
+  }
+  // @keyframes destraSinistra2 {
+  //   0% {
+  //     left: 5px;
+  //   }
+  //   100% {
+  //     left: 32px;
+  //     transform: translateX(-100%);
+  //   }
+  // }
+  #div1 {
+    width: 6px;
+    height: 2.5px;
+    background-color: var(--secondary);
+    position: absolute;
+    animation: move 1s linear infinite alternate;
+  }
+  @keyframes move {
+    0% {
+      left: 10px; /* Start with no width */
+    }
+    25% {
+      right: 30px; /* Start with no width */
+    }
+    // 50% {
+    //   width: 50%; /* Grow to 50% of container width */
+    // }
+    100% {
+      left: 30px; /* End with no width */
+    }
+  }
+  .OG_card {
+    --bs-card-border-radius: 10px;
+    margin: 5px;
+    // margin: 20px;
+    // margin-right: 20px;
+    // margin-left: 20px;
+    // margin-right: 2px;
+    // margin-left: 17px;
+    // margin-bottom: 25px;
+  }
+  .form-switch .form-check-input {
+    background-image: url(../../public/Images/switch.png) !important;
+  }
+  .form-check-input:disabled {
+    opacity: 0.9 !important;
+  }
+  .custom_live_card {
+    width: 100%;
+    height: 200px;
+    padding: 0px;
+    border-radius: 10px;
+  }
+  .full_card {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .upper {
+    text-align: -webkit-center;
+    width: 100%;
+    height: 80%;
+    border-radius: 10px 10px 0px 0px;
+    border: 1px solid var(--primary);
+  }
+  .lower_box {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .lower_box_left {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .lower_box_right {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .lower_box:hover {
+    background-color: var(--light);
+    .imgText {
+      font-size: 8px;
+      margin-left: 2px;
+      color: var(--primary);
+    }
+    .reponsive_text {
+      font-size: 10px;
+      margin-left: 2px;
+      color: var(--primary);
+    }
+    .imgV {
+      display: none;
+    }
+    .imgVs {
+      display: block;
+    }
+  }
+  .lower_box_left:hover {
+    background-color: var(--light);
+    border-bottom-left-radius: 10px;
+    .imgText {
+      font-size: 8px;
+      margin-left: 2px;
+      color: var(--primary);
+    }
+    .reponsive_text {
+      font-size: 10px;
+      margin-left: 2px;
+      color: var(--primary);
+    }
+    .imgV {
+      display: none;
+    }
+    .imgVs {
+      display: block;
+    }
+  }
+  .lower_box_right:hover {
+    background-color: var(--light);
+    border-bottom-right-radius: 10px;
+    .imgText {
+      font-size: 8px;
+      margin-left: 2px;
+      color: var(--primary);
+    }
+    .reponsive_text {
+      font-size: 10px;
+      margin-left: 2px;
+      color: var(--primary);
+    }
+    .imgV {
+      display: none;
+    }
+    .imgVs {
+      display: block;
+    }
+  }
+  .lower {
+    width: 100%;
+    height: 20%;
+    background-color: var(--primary);
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid var(--primary);
+  }
+  .imgV {
+    // width: 18px;
+    height: 18px;
+  }
+  .imgVs {
+    display: none;
+    // width: 18px;
+    height: 18px;
+  }
+  .imgF {
+    width: 28px;
+    height: 28px;
+  }
+  .top {
+    margin-top: -4px !important;
+  }
+  .switcherBtn {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+  }
+  .switcherBtnLive {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  .team_name {
+    font-size: 18px;
+    font-weight: 700;
+    // white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: bottom;
+    margin: 0px 3px;
+    text-align: initial;
+    color: var(--primary);
+    margin-bottom: 0px !important;
+  }
+  .team_left {
+    align-items: center;
+    display: flex;
+  }
+  .team_right {
+    height: 100%;
+    text-align: flex-end;
+    align-items: center;
+    display: flex;
+    margin-right: 5px;
+  }
+  .run {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 0px !important;
+  }
+  .over {
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .header_text {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 2px;
+  }
+  .footer_text {
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 400;
+    align-self: center;
+    color: black;
+    margin-bottom: 0px !important;
+  }
+  .imgText {
+    font-size: 8px;
+    margin-left: 2px;
+    margin-bottom: 0px !important;
+    color: var(--light);
+  }
+  .reponsive_text {
+    font-size: 10px;
+    margin-left: 2px;
+    color: var(--light);
+  }
+  .upper_row {
+    margin: 7px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 7px;
+  }
+  .upper_live_row {
+    flex-direction: column;
+    display: flex;
+  }
+  .live_text {
+    width: auto;
+    font-size: 14px;
+    color: var(--secondary);
+    font-weight: 700;
+    margin-top: 5px;
+    text-align: left;
+    margin-bottom: 0px !important;
+    margin-right: 0px !important;
+  }
+  @media only screen and (max-width: 768px) {
+    .upper {
+      height: 85%;
+    }
+    .match_center {
+      visibility: visible;
+      height: auto !important;
+      width: 190px;
+      //   transition: 300ms linear;
+    }
+    .match_center {
+      height: 25px !important;
+      /* visibility: hidden; */
+      align-items: center;
+      justify-content: center;
+      background-color: var(--primary);
+      color: white;
+      width: 55%;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
+    .match_center_text {
+      text-align: center;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--light);
+      margin-bottom: 0px;
+    }
+    .match_center_text {
+      //    display: none;
+    }
+    .match_center {
+      // background-color: white;
+    }
+    .custom_live_card:hover {
+      width: 100%;
+      height: 200px !important;
+    }
+
+    .team_name {
+      font-size: 14px;
+    }
+    .run {
+      font-size: 14px;
+    }
+    .over {
+      font-size: 10px;
+    }
+    .OG_card {
+      --bs-card-border-radius: 10px;
+      // margin-right: 0px;
+      // margin-left: 0px;
+      // margin-bottom: 15px;
+      margin: 15px;
+    }
+  }
+  @media only screen and (min-width: 1100px) and (max-width: 1400px) {
+    .imgText {
+      font-size: 8px;
+    }
+  }
+}

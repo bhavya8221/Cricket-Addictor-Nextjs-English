@@ -1,0 +1,576 @@
+.BlogArticlesLatest {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+  background-color: white;
+  .link {
+    text-decoration: none;
+    color: inherit;
+  }
+  .gallery {
+    background: #eee;
+  }
+  .preNextButton {
+    display: flex;
+    width: 20%;
+    margin: 0px 10px;
+    background-color: #d9d9d9;
+    justify-content: center;
+    .preMoreBtn {
+      background-color: var(--primary);
+      border: none;
+      margin: 3px 5px;
+      border-radius: 100px;
+
+      svg {
+        font-size: 37px;
+        color: white;
+      }
+    }
+  }
+  .newscat_row {
+    display: flex;
+    background: var(--light);
+    padding-top: 10px;
+  }
+  .newscat_col1 {
+    background-color: var(--primary);
+    color: var(--light);
+    // width: 20%;
+    h5 {
+      text-align: center;
+      margin: 0px !important;
+      font-weight: 600;
+      font-size: 25px;
+      padding: 8px 10px;
+    }
+  }
+  .newscat_col2 {
+    background-color: #d9d9d9;
+    display: flex;
+    // width: 80%;
+    overflow: auto;
+    .gallery-cell {
+      width: 66%;
+      height: 200px;
+      margin-right: 10px;
+      background: #8c8;
+      counter-increment: gallery-cell;
+    }
+    .gallery-cell:before {
+      display: block;
+      text-align: center;
+      content: counter(gallery-cell);
+      line-height: 200px;
+      font-size: 80px;
+      color: white;
+    }
+    h5 {
+      cursor: pointer;
+      background-color: var(--light);
+      padding: 8px 10px;
+      margin: 5px;
+      font-weight: 600;
+      font-size: 14px;
+      // padding: 3px 50px;
+      border-radius: 4px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      white-space: nowrap;
+    }
+  }
+  .newscat_col2::-webkit-scrollbar {
+    display: none;
+    /* Crome */
+  }
+  .newscat_col2 {
+    overflow: scroll !important;
+    // -ms-overflow-style: none;
+    /* IE and Edge */
+    // scrollbar-width: none;
+    /* Firefox */
+  }
+  .BlogArticlesLatestRow {
+    // padding: 8px 0px;
+    .BlogArticlesLatestCol1,
+    .BlogArticlesLatestCol2 {
+      //     width: 90%;
+      //   margin: 1px;
+      // column-gap: 2rem;
+      // column-gap: 2px;
+      //   padding: 10px;
+      // border: 1.05119px solid rgba(0, 0, 0, 0.1);
+      padding: 0px 10px;
+      border-radius: 5.25594px;
+    }
+    .BlogArticlesLatestCol1 {
+      .blogAritcal_Heading,
+      .blogAritcal_date,
+      .blogAritcal_socialLogo,
+      .blogAritcal_potedby {
+        // padding: 0px 7px;
+        margin: 0px 10px;
+      }
+      .breadcrumb {
+        margin: 5px;
+        // align-items: center;
+        align-items: baseline;
+      }
+      .blogAritcal_Heading {
+        h1 {
+          font-weight: 650;
+          font-size: 25px;
+          line-height: 35px;
+        }
+      }
+      .blogAritcal_date {
+        display: flex;
+        // justify-content: center;
+        margin: 10px;
+        .verticalLine {
+          border-left: 2.5px solid var(--primary);
+          height: 18px;
+          // margin-left: 11px;
+          align-self: center;
+        }
+        h2 {
+          margin: 0px 7px;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 30px;
+          white-space: nowrap;
+        }
+      }
+      .blogAritcal_socialLogo {
+        // text-align: center;
+        white-space: nowrap;
+
+        .social_icon {
+          width: 40px;
+          height: 40px;
+          background-color: #d9d9d9;
+          padding: 12px;
+          border-radius: 50px;
+          margin: 6px 4px;
+          cursor: pointer;
+        }
+      }
+      .blogAritcal_potedby {
+        // text-align: center;
+        margin: 10px;
+        h3 {
+          display: inline;
+          margin-right: 3px;
+          font-size: 20px;
+          img {
+            width: 30px;
+            height: 25px;
+            vertical-align: bottom;
+            margin: 0px 5px;
+          }
+          .admin {
+            color: var(--primary) !important;
+            text-decoration: underline !important;
+          }
+          .adminLogo {
+            color: var(--primary);
+            margin: 0px 3px;
+            text-decoration: underline !important;
+          }
+        }
+      }
+      .blogAritcal_poster {
+        .blogAritcal_poster_img {
+          width: 100%;
+          height: 40%;
+        
+          img {
+            width: 100% !important;
+            // height: 400px;
+            // width: 600px;
+          }
+          // strong{
+          //   display: block;
+          // }
+          .Logo{
+            position: absolute;
+            background: white;
+            margin: 1px;
+            padding: 1px;
+          }
+        }
+      }
+      .blogAritcal_poster_headings {
+        h4 {
+          font-weight: 700;
+          font-size: 20px;
+          color: var(--primary);
+        }
+      }
+      .blogAritcal_post_content,
+      .blogAritcal_post_summary {
+        overflow-wrap: anywhere;
+        margin: 15px 0px;
+        padding: 0px 10px;
+        img,
+        figure {
+          width: 100% !important;
+          height: 100% !important;
+        }
+        iframe {
+          width: 100% !important;
+        }
+        h3 {
+          strong {
+            margin: 20px 0px;
+          }
+        }
+        h2,
+        h3 {
+          margin: 5px 0px !important;
+        }
+        // span {
+        //   // display: block;
+        //   margin: 20px 0px;
+        //   line-height: 20px;
+        // }
+        tr,
+        td {
+          border: 1px solid;
+          padding: 6px !important;
+        }
+        .ez-toc-container {
+          border: 1px solid;
+        }
+        .ez-toc-title {
+          border: 1px solid;
+          padding: 4px;
+          margin: 2px;
+        }
+        h2 {
+          span {
+            line-height: 30px;
+          }
+        }
+        table {
+          display: table-cell;
+        }
+        p {
+          font-size: 17px;
+          font-weight: 400;
+          line-height: 27px;
+          margin-bottom: 5px;
+          // text-align: justify;
+        }
+      }
+      .blogAritcal_tagSection {
+        text-align: center;
+
+        .NEW_Tag {
+          .NEW_TAG_name {
+            text-align: -webkit-center;
+            cursor: pointer;
+            h4 {
+              border: 1px solid var(--primary);
+              //   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+              border-radius: 10px;
+              //   background: #ffffff;
+              //   box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.1),
+              //     1px 1px 2px rgba(0, 0, 0, 0.1);
+              background: rgba(208, 63, 56, 0.1);
+              border: 1px solid rgba(208, 63, 56, 0.2);
+              border-radius: 7.53068px;
+              margin: 5px 3px;
+              font-weight: 700;
+              font-size: 16px;
+              white-space: nowrap;
+              color: black;
+              width: fit-content;
+              padding: 5px 10px;
+            }
+          }
+        }
+      }
+    }
+    .BlogArticlesLatestCol2 {
+      height: fit-content !important;
+      padding: 0px 10px;
+      .Latest_news_section {
+        hr {
+          width: 50% !important;
+        }
+        ::marker {
+          margin: 0px !important;
+        }
+        .Latest_news_section_heading {
+          display: flex;
+
+          .Latest_news {
+            white-space: nowrap;
+            //   font-style: italic;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 40px;
+            color: var(--primary);
+            margin: 0;
+          }
+          .horizontalLine {
+            border-bottom: 2px solid var(--primary);
+            width: -webkit-fill-available;
+            color: var(--primary);
+          }
+        }
+        .Latest_news_section_content {
+          // margin: 15px 0px;
+          p {
+            margin: 0;
+          }
+          .title {
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 22px;
+          }
+          .date {
+            font-weight: 600;
+            font-size: 13px;
+            opacity: 0.7;
+          }
+        }
+      }
+      .fantasy_news_section {
+        hr {
+          width: 50%;
+        }
+        .fantasy_news_section_heading {
+          display: flex;
+
+          .fantasy_news {
+            white-space: nowrap;
+            //   font-style: italic;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 40px;
+            color: var(--primary);
+            margin: 0;
+          }
+          .horizontalLine {
+            border-bottom: 2px solid var(--primary);
+            width: -webkit-fill-available;
+            color: var(--primary);
+          }
+        }
+        .fantasy_news_section_content {
+          // margin: 15px 0px;
+          p {
+            margin: 0;
+          }
+          .title {
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 19px;
+          }
+          .date {
+            font-weight: 600;
+            font-size: 14px;
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+  }
+  .blogAritcal_related_section {
+    padding: 0px 10px;
+    .related_section {
+      display: flex;
+      align-items: center;
+      h5 {
+        margin: 5px;
+      }
+      .verticalLine {
+        border-left: 4px solid var(--primary);
+        height: 18px;
+        // margin-left: 11px;
+        align-self: center;
+      }
+      .related_news {
+        white-space: nowrap;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 40px;
+      }
+      .horizontalLine {
+        border-bottom: 4px solid var(--primary);
+        width: -webkit-fill-available;
+      }
+    }
+  }
+  .BlogModal {
+    // color: red;
+    // background: #FFFFFF;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      margin: 0;
+    }
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px 20px 0px 0px;
+
+    .leftModal {
+      border-left: 5px solid var(--primary);
+      box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.25),
+        0px 1px 2px rgba(0, 0, 0, 0.25);
+      border-radius: 10px;
+      // color: red;
+      .modaltop_new {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+      }
+      .topcol1_new {
+        display: flex;
+      }
+      .topcol1_new {
+        display: flex;
+      }
+      .follow_new {
+        /* width: 200px; */
+        /* height: 55px; */
+        /* background: aqua; */
+        height: fit-content;
+        width: fit-content;
+        align-self: center;
+        padding: 2px 12px;
+        font-size: 14px;
+        background: #4267b2;
+        border-radius: 6.46291px;
+        color: white;
+
+        .userIconFollow {
+          font-size: 18px;
+          vertical-align: bottom !important;
+        }
+      }
+      .username {
+        height: fit-content;
+        align-self: center;
+        h5 {
+          font-weight: 700;
+          font-size: 18px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          width: 148px;
+          white-space: nowrap;
+        }
+        h6 {
+          font-weight: 400;
+          font-size: 15px;
+        }
+      }
+      .userimage {
+        text-align: center;
+        padding: 2px;
+        img {
+          height: 60px;
+          width: 60px;
+          border-radius: 50px;
+        }
+      }
+      .modal_new_desc {
+        font-weight: 400;
+        font-size: 16px;
+        padding: 5px;
+        p {
+          height: 200px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+    .modalrightPlayer {
+      margin: 10px;
+    }
+    .RightModal {
+      // margin: 10px;
+      width: 100%;
+    }
+    .RightModal_newTop {
+      display: flex;
+    }
+    h5 {
+      font-weight: 700;
+      font-size: 22px;
+      color: var(--primary);
+      // display: inline;
+    }
+    .horizontalLine {
+      border-bottom: 2px solid var(--primary);
+      width: -webkit-fill-available;
+    }
+    .RightModal_Artical_List {
+      margin: 12px;
+    }
+    li {
+      list-style: none;
+      display: flex;
+      .dot {
+        color: var(--primary);
+      }
+    }
+    .list_text {
+      white-space: nowrap;
+      // height: 40px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      width: 335px;
+    }
+    .link {
+      text-decoration: none;
+      color: inherit;
+    }
+    .read_more {
+      border-radius: 10px;
+      background-color: var(--primary);
+      color: var(--light);
+      width: fit-content;
+      padding: 5px 10px;
+    }
+    .Read_more_Link {
+      margin-left: auto !important;
+      margin-right: auto !important;
+      width: fit-content;
+    }
+  }
+  @media (max-width: 767px) {
+    .BlogArticlesLatestCol1 {
+      padding: 0px !important;
+    }
+    .blogAritcal_Heading {
+      text-align: center;
+    }
+    .blogAritcal_date {
+      justify-content: center;
+      h2 {
+        font-size: 15px !important;
+      }
+    }
+    .blogAritcal_socialLogo {
+      text-align: center;
+    }
+    .blogAritcal_potedby {
+      text-align: center;
+      h3 {
+        font-size: 15px !important;
+        font-weight: 450;
+      }
+    }
+  }
+}

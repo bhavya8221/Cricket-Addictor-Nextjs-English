@@ -1,0 +1,49 @@
+.teams_section {
+  background: var(--light);
+}
+.MenuItem {
+  .MenuItem_Container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #c9c9c9;
+    .MenuItem_Container_list {
+      background-color: white;
+      color: black;
+      .h6 {
+        color: white;
+      }
+    }
+  }
+}
+.SeperateMenuOptionteam{
+  margin-bottom: 10px;
+  .list{
+    overflow: scroll;
+    display: flex;
+    background-color: #C9C9C9;
+    h6{
+      font-size: 1rem;
+    padding: 10px;
+    background: white;
+    margin: 0;
+    margin: 10px;
+    width: 400px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 600;
+    text-transform: capitalize;
+    cursor: pointer;
+    
+    }
+  }
+}
+.list::-webkit-scrollbar {
+  display: none;
+  /* Crome */
+}
+.list {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}

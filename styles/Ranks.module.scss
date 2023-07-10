@@ -1,0 +1,116 @@
+.rankingCard_section {
+    padding: 10px;
+    .Ranking-section{
+
+    }
+    .flag_team {
+        display: inline;
+    }
+    .iccHeading{
+        padding: 0px ;
+        padding-bottom: 17px ;
+    }
+    .player_team {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .loader {
+        background-color: rgb(240, 240, 240);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+        width: 100%;
+    }
+    .more {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .show_more {
+        box-shadow: 0px 1.95516px 1.95516px rgba(0, 0, 0, 0.25);
+        background-color: var(--primary);
+        color: var(--light);
+        width: 140px;
+        height: 31px;
+        border-radius: 5px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .styled_table {
+        border-collapse: collapse;
+        min-width: 100%;
+        border: 2px solid #d9d9d9;
+    }
+    .styled_table thead tr {
+        background-color: var(--primary);
+        text-align: left;
+        color: var(--light);
+        font-size: 20px;
+    }
+    .main_div {
+        display: flex;
+        flex-direction: row;
+    }
+    .rank-box h3 {
+        color: var(--primary);
+        font-style: italic;
+        font-weight: 700;
+        font-size: 24px;
+    }
+    .styled_table th,
+    .styled_table td {
+        padding: 10px 12px;
+        text-align: center;
+    }
+    .styled_table tbody tr:nth-child(even) {
+        background-color: #d9d9d9;
+    }
+    .ad-block {
+        background-color: black;
+        color: var(--light);
+        align-items: center;
+        justify-content: center;
+    }
+    .ad-block h3 {
+        margin: 10px;
+    }
+    .rank-box td {
+        justify-content: center;
+        align-items: center;
+    }
+    .styled_table .text_left {
+        text-align: left;
+    }
+    table img {
+        width: 36px;
+        height: 36px;
+        margin-right: 10px;
+    }
+    @media (max-width: 779px) {
+        .ad-block {
+            height: 400px;
+        }
+        .rank-box h3 {
+            font-size: 15px;
+        }
+        .text_size {
+            font-size: 10px !important;
+        }
+        .main_div {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        table img {
+            width: 25px;
+            height: 25px;
+            margin-right: 5px;
+        }
+    }
+}

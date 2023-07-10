@@ -1,0 +1,30 @@
+
+.video_section{
+    background-color: var(--light);
+}
+.link_color {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    // @include themify($themes) {
+    //     background: themed("bodyBackgroundColor");
+    //     // color: themed('textColor');
+    //   }
+    background: var(--light);
+}
+
+.MuiPagination-ul {
+    justify-content: center;
+}
+
+.MuiPaginationItem-page.Mui-selected {
+    background-color: var(--primary) !important;
+    color: white !important;
+}

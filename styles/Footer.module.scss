@@ -1,0 +1,234 @@
+.footer_section {
+  // background-image: url(../public/Images/footerBack.png);
+  // height:500px;
+  // width: 100%;
+  background-color: #ffffff;
+
+  .image {
+    width: 70%;
+    // padding: 50px 0px;
+    height: 500px !important;
+    position: absolute !important;
+  }
+
+  .hr1 {
+    height: 20px;
+    // width: 90%;
+  }
+
+  p {
+    text-align: center;
+    color: var(--primary);
+    font-weight: 700;
+    padding: 10px;
+  }
+
+  .uppercase_text {
+    text-transform: uppercase;
+    color: var(--primary);
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+
+  .footer_background {
+    // background: var(--primary);
+    // background-color: #D03F38;
+  }
+
+  li {
+    text-align: start;
+    list-style: none;
+    line-height: 2;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+    font-size: 15px;
+  }
+
+  .link {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .footer_heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    margin-bottom: 40px;
+    color: #ffffff;
+  }
+
+  .subfooter li {
+    text-align: start;
+    list-style: none;
+    line-height: 2;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .subfooter li a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .footer_sectionchild {
+
+    position: relative;
+    width: auto;
+    z-index: 1;
+    height: auto;
+    // margin: 25px 34px 0px 34px;
+    padding: 0px 12px;
+    padding-bottom: 14px;
+  }
+
+  .subfooter h3 {
+    text-align: left;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+
+  .media_heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+    color: #ffffff;
+  }
+
+  .socialLogo_section {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .social_img {
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+
+  .copyright_section {
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 0px;
+    position: relative;
+  }
+
+  .copyright_section::before {
+    content: "";
+    display: block;
+    width: 36%;
+    height: 2px;
+    background: #ffffff;
+    position: absolute;
+    left: 0%;
+    top: 50%;
+  }
+
+  .copyright_section::after {
+    content: "";
+    display: block;
+    width: 36%;
+    height: 2px;
+    background: #ffffff;
+    position: absolute;
+    right: 0%;
+    top: 50%;
+  }
+
+  @media (max-width: 991px) {
+    .footer_sectionchild {
+      position: relative;
+      width: auto;
+      z-index: 1;
+      height: auto;
+      // margin: 25px 25px 0px 25px;
+      padding-bottom: 90px;
+    }
+
+    .subfooter h3 {
+      border-bottom: 2px solid #ffffff;
+    }
+
+    .subfooter li {
+      margin-bottom: 0px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .subfooter {
+      margin-top: 15px;
+    }
+
+    .color_red {
+      margin-bottom: 5px !important;
+    }
+
+    .copyright_section::after {
+      display: none;
+      content: "";
+      width: 0;
+      height: 0;
+      background: none;
+      position: static !important;
+      left: 0;
+      top: 0;
+    }
+
+    .copyright_section::before {
+      display: none;
+      content: "";
+      width: 0;
+      height: 0;
+      background: none;
+      position: static !important;
+      left: 0;
+      top: 0;
+    }
+
+    .copyright_section {
+      position: static !important;
+      margin-left: 0;
+    }
+
+    .media_heading {
+      text-align: center;
+    }
+
+    .socialLogo_section {
+      justify-content: center;
+    }
+
+    .copyright_section {
+      text-align: center;
+      font-size: 18px;
+      line-height: 24px;
+      margin-top: 10px;
+    }
+
+    .footer_heading {
+      margin-bottom: 20px;
+      font-size: 30px;
+      line-height: 45px;
+    }
+
+    .media_heading {
+      font-size: 23px;
+      line-height: 32px;
+    }
+
+    .social_img {
+      width: 17px;
+      height: 17px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+}

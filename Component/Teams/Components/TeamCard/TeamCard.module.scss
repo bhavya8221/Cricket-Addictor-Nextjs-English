@@ -1,0 +1,225 @@
+.main_div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px 5px;
+  // margin-left: 20px;
+  // margin-right: 20px;
+  background-color: var(--light);
+  .link_color {
+    color: black;
+    text-decoration: none;
+  }
+  .center_box {
+    text-align: -webkit-center;
+  }
+  @mixin commonproperty {
+    width: 94%;
+    height: 315px;
+    border-radius: 10px;
+    // margin-top: 15px;
+    margin: 10px 0px;
+  }
+  .box_1 {
+    background: linear-gradient(
+      180deg,
+      rgba(2, 78, 162, 0.31) 0%,
+      #024ea2 99.99%,
+      #024ea2 100%
+    );
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    @include commonproperty;
+  }
+
+  .img1 {
+    // padding: 30px 20px 0 20px;
+    text-align: center;
+  }
+  .card_img {
+    width: 126px;
+    height: 126px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    background-color: var(--light);
+    border-radius: 50%;
+    padding: 5px;
+    margin: 6px;
+  }
+  img.card_img.card_img2 {
+    width: 216px;
+    height: 155px;
+    // margin-top: -26px;
+  }
+  @mixin heading_commonproperty {
+    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 23px;
+    text-align: center;
+    color: #ffffff;
+  }
+  .card_heading {
+    @include heading_commonproperty;
+    // margin: 20px 0px 10px 0px;
+    margin: 5px;
+    text-transform: uppercase;
+  }
+  .sub_heading {
+    @include heading_commonproperty();
+  }
+  .first_block {
+    // width: 82%;
+    // height: 47px;
+    width: fit-content;
+    padding: 8px 25px;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    // margin: 10px 0px 0px 0px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main_box {
+    text-align: -webkit-center;
+  }
+  .medal {
+    width: 10px;
+    height: 19px;
+  }
+  .card_num {
+    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    color: #000000;
+    // padding-top: 15px;
+    margin: 0;
+    padding-left: 10px;
+  }
+  @media only screen and (max-width: 767px) {
+    .content {
+      height: 200px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    .img1 {
+      padding: 0;
+      width: 35%;
+    }
+    img.card_img.card_img2 {
+      width: 100%;
+      height: 100%;
+      margin-top: 0px;
+    }
+    @mixin heading_commonproperty {
+      font-size: 16px;
+      line-height: 19px;
+    }
+    .card_heading {
+      margin: 0;
+      @include heading_commonproperty;
+    }
+    .sub_heading {
+      @include heading_commonproperty;
+    }
+    .main_box {
+      width: 65%;
+    }
+    .card_img {
+      width: 75%;
+      height: 75%;
+    }
+    .first_block {
+      width: 156px;
+      height: 30px;
+      border-radius: 5px;
+    }
+    .medal {
+      width: 7px;
+      height: 16px;
+    }
+    .card_num {
+      font-size: 10px;
+      line-height: 14px;
+    }
+  }
+  @media (min-width: 425px) and (max-width: 576px) {
+    .img1 {
+      width: 50%;
+    }
+    .card_img {
+      width: 41%;
+      height: 41%;
+    }
+    img.card_img.card_img2 {
+      width: 74%;
+      height: 87%;
+      margin-top: -5px;
+    }
+    .main_box {
+      width: 50%;
+      text-align: unset;
+    }
+    .card_heading {
+      margin: 0 0 0 13px;
+      text-align: unset;
+    }
+    .sub_heading {
+      text-align: unset;
+      margin-left: 12px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1100px) {
+    .content {
+      height: 360px;
+    }
+    .card_img {
+      width: 55%;
+      height: 55%;
+    }
+    .img1 {
+      padding: 40px 20px 0 20px;
+    }
+    img.card_img.card_img2 {
+      width: 87%;
+      height: 87%;
+      margin-top: -16px;
+    }
+    @mixin heading_commonproperty {
+      font-size: 18px;
+      line-height: 22px;
+    }
+    .card_heading {
+      @include heading_commonproperty;
+      margin: 14px 0 5px 0;
+    }
+    .sub_heading {
+      @include heading_commonproperty;
+    }
+    .first_block {
+      height: 46px;
+      margin-top: 16px;
+    }
+    .medal {
+      width: 12px;
+      height: 20px;
+    }
+    .card_num {
+      font-size: 8px;
+      line-height: 12px;
+      padding-top: 18px;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .main_div {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}

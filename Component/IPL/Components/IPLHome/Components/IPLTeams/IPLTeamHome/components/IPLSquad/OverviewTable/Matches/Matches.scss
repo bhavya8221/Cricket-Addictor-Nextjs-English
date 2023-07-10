@@ -1,0 +1,142 @@
+.matches_Section {
+    .heading_matches {
+        font-style: italic;
+        font-weight: 700;
+        color: var(--primary);
+        margin-left: 20px;
+        margin-top: 19px;
+    }
+    .oneBox {
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+    .test_heading {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23px;
+        color: var(--primary);
+        margin-left: 25px;
+    }
+    .debut_section {
+        background: rgb(206, 204, 204);
+        margin-left: 10px;
+        margin-right: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 7px;
+        padding-left: 20px;
+        padding-right: 50px;
+    }
+    .debutText {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 38px;
+        color: #101729;
+    }
+    .debutLine {
+        width: 52px;
+        height: 1px;
+        opacity: 0.3;
+        transform: rotate(90deg);
+        background: black;
+    }
+    .indiaText {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 19px;
+        color: #000000;
+    }
+    .viewButton {
+        background: var(--primary);
+        box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: #ffffff;
+        padding: 8px;
+    }
+    @media only screen and (min-width: 320px) and (max-width: 560px) {
+        .oneBox {
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .test_heading {
+            font-size: 15px;
+            line-height: 18px;
+            margin-left: 10px;
+        }
+        .debut_section {
+            margin-left: 0px;
+            margin-right: 0px;
+            padding: 5px 4px;
+        }
+        .debutText {
+            font-size: 14px;
+            line-height: 18px;
+        }
+        .indiaText {
+            font-size: 11px;
+            line-height: 14px;
+        }
+        .viewButton {
+            font-size: 11px;
+            line-height: 14px;
+            padding: 5px;
+        }
+    }
+    @media only screen and (min-width: 320px) and (max-width: 498px) {
+        .debutLine {
+            width: 51px;
+        }
+    }
+    @media only screen and (min-width: 498px) and (max-width: 560px) {
+        .debutLine {
+            width: 34px;
+        }
+    }
+    @media only screen and (min-width: 560px) and (max-width: 768px) {
+        .oneBox {
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .test_heading {
+            margin-left: 10px;
+            font-size: 16px;
+            line-height: 19px;
+        }
+        .debut_section {
+            margin-left: 0px;
+            margin-right: 0px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+            padding-right: 15px;
+        }
+        .debutText {
+            font-size: 16px;
+            line-height: 19px;
+        }
+        .indiaText {
+            font-size: 12px;
+            line-height: 15px;
+        }
+        .viewButton {
+            font-size: 13px;
+            line-height: 16px;
+            padding-top: 10px;
+            padding-left: 12px;
+            padding-right: 5px;
+            padding-bottom: 10px;
+        }
+        .debutLine {
+            width: 45px;
+        }
+    }
+}

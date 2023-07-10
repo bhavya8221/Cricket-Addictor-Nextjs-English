@@ -1,0 +1,93 @@
+.imageSlider_ipl_section {
+    .title {
+        font-size: 20px;
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 700;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+    .date {
+        font-size: 15px;
+    }
+    .carouselOption {
+        text-align: unset;
+    }
+    .carousel-control-next {
+        display: none;
+    }
+    .carousel-control-prev {
+        display: none;
+    }
+    .carousel-caption {
+        // right: 2%;
+        // left: 2%;
+    }
+    .carousel-indicators [data-bs-target] {
+        width: 50px;
+        height: 10px;
+        opacity: 1;
+    }
+    .carousel-indicators .active {
+        background-color: var(--primary);
+    }
+    .newsBtn {
+        background-color: var(--secondary);
+        color:  var(--light);
+        font-size: 15px;
+        padding: 4px 25px 4px 25px;
+        border-radius: 7px;
+        border-width: 0px;
+        margin: 10px 0px;
+        cursor: pointer;
+    }
+    .carousel-item:before {
+        -webkit-box-shadow: inset 0 0 20rem rgba(0, 0, 0, 1);
+        box-shadow: inset 0 0 20rem rgb(37, 37, 37);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+    }
+    .slidder {
+        height: 570px;
+    }
+    @media only screen and (max-width: 991px) {
+        .newsBtn {
+            font-size: 8px;
+            padding: 0px 10px;
+        }
+        .title {
+            font-size: 16px;
+            font-family: 'Roboto Condensed';
+            font-style: normal;
+            font-weight: 800;
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+        .date {
+            font-size: 7px;
+        }
+        .carousel-indicators {
+            margin-bottom: 0rem;
+        }
+        .carousel-indicators [data-bs-target] {
+            width: 25px;
+            height: 5px;
+        }
+        .carousel-caption {
+            // bottom: 0px;
+            // padding-bottom: 0rem;
+        }
+        .carousel-item:before {
+            box-shadow: inset 0 0 2rem rgb(37 37 37);
+        }
+    }
+    @media only screen and (max-width: 767px) {
+        .slidder {
+            height: 300px !important;
+        }
+    }
+}

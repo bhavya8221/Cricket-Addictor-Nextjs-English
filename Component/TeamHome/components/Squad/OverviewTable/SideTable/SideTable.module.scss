@@ -1,0 +1,22 @@
+.SideTable {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-bottom: 10px;
+  .sidetableitem {
+    padding: 0px 27px;
+    width: 100%;
+    overflow-y: hidden;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    font-weight: 700;
+    align-items: center;
+    list-style: none;
+    text-align: -webkit-center;
+  }
+}
+
+@media only screen and (max-width: 1136px) {
+  .SideTable {
+    width: 100%;
+  }
+}

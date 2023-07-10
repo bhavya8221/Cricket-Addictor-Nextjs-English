@@ -1,0 +1,272 @@
+.IPLStats_sections {
+  .loader {
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 100%;
+  }
+  .more {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  .show_more {
+    box-shadow: 0px 1.95516px 1.95516px rgba(0, 0, 0, 0.25);
+    background-color: var(--primary);
+    color: var(--light);
+    width: 140px;
+    height: 31px;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  // margin: 30px;
+  // padding-left:10px ;
+  // padding-right: 10px;
+  padding: 10px;
+  .Sicc_type {
+    justify-content: space-evenly;
+    // width: 240px;
+    width: auto;
+    // height: 40px;
+    background-color: #d9d9d9;
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+  }
+  .Steam {
+    background-color: var(--light);
+    align-self: center;
+    text-align: center;
+    padding: 9px 12px 9px 12px;
+    border-radius: 5px 0px 0px 5px;
+    margin-bottom: 0px;
+    // width: 76px;
+    width: auto;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .Sbowling {
+    background-color: var(--light);
+    align-self: center;
+    text-align: center;
+    padding: 9px 14px 9px 12px;
+    border-radius: 0px 5px 5px 0px;
+    // border-radius: 0px 0px 0px 0px; when ur added 3rd button
+    margin-bottom: 0px;
+    // width: 76px;
+    width: auto;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .Sallrounder {
+    background-color: var(--light);
+    align-self: center;
+    text-align: center;
+    padding: 9px 12px 9px 12px;
+    border-radius: 0px 5px 5px 0px;
+    margin-bottom: 0px;
+    width: auto;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .fil {
+    // margin-top: -50px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+  }
+  .no,
+  .Date,
+  .M,
+  .I,
+  .Runs,
+  .HS,
+  .SR,
+  .s50,
+  .s100,
+  .s6,
+  .s4,
+  .Score,
+  .MP,
+  .O,
+  .R,
+  .W,
+  .VS,
+  .BBI,
+  .SR,
+  .Agr,
+  .W5,
+  .player,
+  .W4 .Balls {
+    text-align: center;
+  }
+  .player_name {
+    text-align: left;
+  }
+  .result_text_left {
+    display: flex;
+    justify-content: space-between;
+  }
+  .icon_style {
+    width: 35px;
+    height: 35px;
+    // margin-right: 10px;
+    vertical-align: middle;
+  }
+  .player_flex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    vertical-align: middle;
+    margin-top: 3px;
+  }
+  .team-text {
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .color_red {
+    color: var(--secondary);
+    // margin-top: 30px;
+    text-align: left;
+  }
+  .format {
+    border: 2px solid #d9d9d9;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 1px;
+    margin: 0px 5px;
+    border-radius: 5px;
+  }
+  .IPLSTats_format {
+    background-color: var(--primary);
+    color: var(--light);
+    font-size: large;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .styled-table {
+    border-collapse: collapse;
+    margin: 10px 20px;
+    min-width: 100%;
+    border: 2px solid #d9d9d9;
+  }
+  table img {
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+    // transform: translateY(10px);
+  }
+  .Table_Back {
+    padding: 0.5px;
+    border: 2px solid #d9d9d9;
+    border-radius: 5px;
+  }
+  .IPL_Stats_Table {
+    min-width: 100%;
+    width: 90%;
+    border-collapse: collapse;
+    border-radius: 5px;
+  }
+  .IPL_Stats_Table_header {
+    background-color: var(--primary);
+    text-align: left;
+    color: var(--light);
+    font-size: 20px;
+    border-radius: 5px;
+  }
+  .img_player {
+    border-radius: 50%;
+    height: 35px;
+    margin-right: 10px;
+  }
+  .IPL_Stats_Table th,
+  .IPL_Stats_Table td {
+    padding: 10px 12px;
+    padding: 5px;
+  }
+  .IPL_Stats_Table tbody tr:nth-child(even) {
+    background-color: #d9d9d9;
+  }
+  .IPL_Stats_Tabl tr td {
+    font-size: 20px;
+    line-height: 1;
+  }
+  .IPL_Stats_Table small {
+    font-size: 15px;
+    line-height: 1;
+  }
+  @media (max-width: 767px) {
+    table img {
+      transform: translate(5px, 5px);
+      margin-right: 0;
+      margin: 10px;
+    }
+  }
+  @media (max-width: 500px) {
+    .Table_Back {
+      border: 2px solid #d9d9d9;
+      width: 114%;
+      margin-left: -22px;
+    }
+    .IPLStats_sections {
+      margin: 0;
+      width: 100%;
+    }
+    .IPL_Stats_Table_header {
+      font-size: 10px;
+    }
+    .no,
+    .Date,
+    .M,
+    .I,
+    .Runs,
+    .HS,
+    .SR,
+    .s50,
+    .s100,
+    .s6,
+    .s4,
+    .Score,
+    .MP,
+    .O,
+    .R,
+    .W,
+    .VS,
+    .BBI,
+    .SR,
+    .Avg,
+    .W5,
+    .player,
+    .W4,
+    .Balls,
+    .player_name {
+      text-align: center;
+      font-size: 15px;
+    }
+    .player_name {
+      width: 100%;
+    }
+    .IPL_Stats_Table td {
+      padding: 0;
+    }
+    .player_img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

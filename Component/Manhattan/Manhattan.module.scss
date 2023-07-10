@@ -1,0 +1,34 @@
+.manhattan {
+  padding: 10px;
+  .H3 {
+    color: var(--primary);
+    font-style: italic;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  .scroll-bar {
+    overflow: scroll;
+    // box-shadow: -4px 0px 4px rgba(0, 0, 0, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.25);
+    // border-radius: 5px;
+  }
+
+  .scroll-bar::-webkit-scrollbar {
+    display: none;
+    /* Crome */
+  }
+  .scroll-bar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .manhattan {
+    .bar-res {
+      width: 1000px !important;
+    }
+  }
+}

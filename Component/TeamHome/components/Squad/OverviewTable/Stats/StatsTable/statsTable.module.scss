@@ -1,0 +1,28 @@
+.perFormanceTableContainer {
+  margin: 13px;
+  overflow-y: hidden;
+  white-space: nowrap;
+  .Performance_table {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 2px;
+
+    tr,
+    td {
+      border-style: none !important;
+      text-align: center;
+    }
+  }
+  .Performance_table_header {
+    background-color: #d9d9d9;
+
+    th {
+      padding: 15px;
+      border: none !important;
+    }
+  }
+  @media only screen and (max-width: 776px) {
+    .MatchTypeConditionRow {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.IPLNews_section {
+
+    .link_color {
+        color: black;
+        width: 100%;
+        text-decoration: none;
+    }
+    .flexContainer {
+        display: flex;
+        flex-direction: row;
+        // width: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .rightcol ul li p::before {
+        content: "" !important;
+        color: unset !important;
+    }
+    .rightcol ul li p {
+        line-height: 1.2 !important;
+        color: #101729;
+        padding-right: 0px !important;
+        font-weight: bolder;
+    }
+    @media only screen and (max-width: 767px) {
+        .cols {
+            width: -webkit-fill-available;
+        }
+    }
+}

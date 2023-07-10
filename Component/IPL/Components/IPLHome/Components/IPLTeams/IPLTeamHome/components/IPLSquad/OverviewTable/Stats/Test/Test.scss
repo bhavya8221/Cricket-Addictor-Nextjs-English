@@ -1,0 +1,82 @@
+.MatchConditionList {
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--primary);
+    color: var(--light);
+    border-radius: 5px;
+    margin: 10px 0px;
+    padding: 5px 25px;
+}
+
+.MatchCondition {
+    width: 100%;
+    background-color: var(--primary);
+    color: var(--light);
+    font-size: 18px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.MatchTypeCondition {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #ebebeb;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    border: 1px solid rgb(62, 61, 61);
+}
+
+.MatchType {
+    width: 100%;
+    color: black;
+    font-size: 18px;
+    margin: 1px;
+    text-align: center;
+    padding: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.MatchTypeConditionRow {
+    width: 50%;
+}
+
+.MatchTypeConditionRowStats {
+    width: 35%;
+}
+
+.Table_Stats {
+    overflow-x: scroll;
+    text-align: -webkit-center;
+}
+
+@media only screen and (max-width: 1290px) and (min-width: 997px) {
+    .MatchTypeConditionRow {
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width: 997px) and (min-width: 880px) {
+    .MatchTypeConditionRowStats {
+        width: 45%;
+    }
+    .MatchTypeConditionRow {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .MatchTypeConditionRow {
+        width: 100%;
+    }
+    .MatchTypeConditionRowStats {
+        width: 100%;
+    }
+    .MatchCondition {
+        font-size: 14px;
+    }
+}

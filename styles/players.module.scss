@@ -1,0 +1,213 @@
+.PlayersDisplay {
+  background-color: var(--light);
+  .link {
+    text-decoration: none;
+    color: inherit;
+  }
+  .PlayerTeam {
+    // margin-top: 20px;
+    // margin-bottom: 20px;
+    // width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .player_row {
+      display: flex;
+    }
+    .player_col1 {
+      background-color: var(--primary);
+      color: var(--light);
+      // width: 20%;
+      h5 {
+        text-align: center;
+        margin: 0px !important;
+        font-weight: 600;
+        font-size: 25px;
+        padding: 8px 10px;
+      }
+    }
+    .player_col2 {
+      background-color: #d9d9d9;
+      display: flex;
+      // width: 80%;
+      overflow: auto;
+      h5 {
+        cursor: pointer;
+        background-color: var(--light);
+        padding: 8px 10px;
+        margin: 5px 10px;
+        font-weight: 600;
+        font-size: 25px;
+        padding: 3px 50px;
+        border-radius: 4px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        white-space: nowrap;
+      }
+    }
+    .player_col2::-webkit-scrollbar {
+      display: none;
+      /* Crome */
+    }
+    .player_col2 {
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
+    }
+  }
+  .PlayerBox {
+    // box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: 1px solid black;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    // padding: 10px;
+    h5 {
+      margin: 10px;
+      font-weight: 700;
+    }
+    .List {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      display: flex;
+      .ActivePlayer {
+        background-color: var(--primary);
+        color: var(--light);
+        font-size: 20px;
+        white-space: nowrap;
+        padding: 10px;
+        font-weight: 600;
+      }
+      span {
+        cursor: pointer;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .Alphabets {
+        align-self: center;
+        overflow: scroll;
+      }
+      .Alphabets::-webkit-scrollbar {
+        display: none;
+        /* Crome */
+      }
+      .Alphabets {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+      }
+      .selectedAlpha {
+        color: var(--light);
+        font-weight: 700;
+        font-weight: 700;
+        color: var(--light);
+        padding: 0px 3px;
+        border-radius: 3px;
+        background: var(--primary);
+      }
+      .Aplhabests {
+        width: 100%;
+        overflow: auto;
+        font-size: 20px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        padding: 10px;
+        span {
+          width: 100%;
+          padding-left: 8px;
+          padding-right: 8px;
+          // margin-left: 10px;
+          // margin-right: 10px;
+        }
+      }
+    }
+    .listMatch {
+      overflow: auto;
+      margin: 10px;
+      display: flex;
+      border-bottom: 1ps solid black;
+      .MatchNameActive {
+        background-color: var(--primary);
+        width: fit-content;
+        color: var(--light);
+        padding: 5px 15px;
+        text-align: center;
+        font-weight: 600;
+        border-radius: 8px;
+        margin: 5px;
+        cursor: pointer;
+      }
+      .MatchName {
+        border: 1px solid black;
+        width: fit-content;
+        color: black;
+        padding: 5px 15px;
+        text-align: center;
+        font-weight: 600;
+        border-radius: 8px;
+        margin: 5px;
+        cursor: pointer;
+        display: flex;
+        white-space: nowrap;
+        align-items: center;
+      }
+    }
+    .playerCard {
+      margin: 15px;
+      border-radius: 10px;
+      // background-color: var(--primary);
+      background-color: #d9d9d9;
+      padding: 3px;
+      .playerCardStyle {
+        display: flex;
+        .playerImage {
+          border-radius: 50px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          height: 100px;
+          width: 100px;
+          text-align: center;
+          background-color: var(--light);
+          padding: 4px;
+          margin: 5px;
+          .backText {
+            font-size: 80px;
+            font-weight: 500;
+            // color: var(--primary);
+            color: #2a3a84;
+            text-align: center;
+            margin-top: -10px;
+          }
+          .img {
+            height: 70px;
+            width: 70px;
+            //   display: flex;
+            margin-top: -160px;
+            //   border-radius: 50px;
+          }
+        }
+        .playerInfo {
+          margin: 5px;
+          align-self: center;
+          .PlayerName {
+            font-weight: 700;
+            color: black;
+            font-size: 23px;
+          }
+          .ViewProfile {
+            color: var(--light);
+            text-decoration: underline;
+            font-size: 16px;
+            margin: 10px 0px;
+            text-underline-offset: 4px;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 760px) {
+    .PlayerBox {
+      width: 100%;
+    }
+  }
+}

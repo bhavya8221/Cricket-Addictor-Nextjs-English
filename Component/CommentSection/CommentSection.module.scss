@@ -1,0 +1,59 @@
+.CommentsSection_Card_section {
+  margin: 10px 5px;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+  }
+  .CommentsSection_Card{
+    margin: 5px;
+
+      .card-body {
+        padding: 10px !important;
+      }
+      .CommentsSection_Card1 {
+        display: flex;
+        .imagesComment {
+          border-radius: 50px;
+          img {
+            border-radius: 50px;
+          }
+          // height: 80px;
+          // width: 80px;
+          //   background-color: aqua;
+        }
+        .CommentsSection_userName {
+          margin: 2px 5px;
+          h5 {
+            color: var(--primary);
+          }
+          h6 {
+            font-size: 14px;
+          }
+        }
+      }
+      .CommentsSection_Card2 {
+        p {
+          font-size: 15px;
+          font-weight: 500;
+          margin: 10px 0px;
+        }
+      }
+      .CommentsSection_Card3{
+
+          display: flex;
+          align-items: center;
+          justify-content: end;
+        }
+        .threedot{
+            color: black;
+            size: 15px;
+            margin: 0px  5px;
+        }
+   
+  }
+}

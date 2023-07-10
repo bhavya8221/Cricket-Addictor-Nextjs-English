@@ -1,0 +1,89 @@
+.IPL_Squad {
+    .captionPosition {
+        height: 25px;
+        width: 25px;
+        background-color: #2a3a84;
+        color: var(--light);
+        border-radius: 25px;
+        margin: 10px;
+        h6 {
+            font-weight: 600;
+            font-size: 20px;
+        }
+    }
+    .nonCaptionPosition {
+        height: 25px;
+        width: 25px;
+        color: var(--light);
+        border-radius: 25px;
+        margin: 10px;
+    }
+    .playerposition {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .detials h4 {
+        background-color: #fff;
+        padding: 5px 0;
+        color: #f9a70c;
+    }
+    .playerCard {
+        background: linear-gradient(180deg, rgba(217, 217, 217, 0.31) 0%, #193684 228%);
+        text-align: center;
+        margin: 0px 10px;
+        border-bottom-left-radius: 0% !important;
+        border-bottom-right-radius: 0% !important;
+    }
+    .player_Card_container {
+        margin: 20px;
+    }
+    .playerCard_col {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .player_Card_title {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 10px;
+        color: #ff8800;
+        font-weight: 600;
+        font-size: 25px;
+    }
+    .card_title {
+        background-color: var(--light);
+        margin: 0;
+    }
+    .player_Card_footer {
+        background-color: #2e488e;
+        color: var(--light);
+        margin: 0px 10px;
+        padding: 15px 0px;
+        text-align: center;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+        cursor: pointer;
+        .link {
+            color: var(--light);
+        }
+        .card_footer:hover {
+            color: rgb(201, 197, 197);
+        }
+    }
+    @media (min-width:767px) and (max-width:1040px) {
+        .player_Card_footer {
+            font-size: 10px;
+            padding: 8px 0px;
+        }
+        .player_Card_title {
+            font-size: 10px;
+        }
+        .disp_img img {
+            width: 129px;
+            height: 144px;
+        }
+        .back_text {
+            font-size: 117px;
+            margin-top: -35px;
+            margin-bottom: 0px;
+        }
+    }
+}

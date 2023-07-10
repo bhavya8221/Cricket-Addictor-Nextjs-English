@@ -1,0 +1,350 @@
+.scorePanel_sectio_live_New {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+
+  .link {
+    color: inherit;
+    text-decoration: none;
+  }
+  .link:hover {
+    color: var(--primary);
+  }
+
+  .Row1 {
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    .Row1_inner {
+      padding: 10px;
+      h1 {
+        // margin: 0;
+        font-weight: 500;
+        font-size: 17px;
+
+        // color: var(--primary);
+        // color: var(--primary);
+        color: #00008b;
+        cursor: pointer;
+      }
+      h1:hover {
+        color: var(--primary);
+      }
+      h2 {
+        font-size: 16px;
+        font-weight: 400;
+        margin: 2px 0;
+        color: #82868f;
+      }
+    }
+  }
+  .Row2 {
+    .col1 {
+      border-right: 1px solid #cccccc;
+      .Col1Row1 {
+        border-bottom: 1px solid #cccccc;
+        // margin-left: 5px;
+        // margin-right: 5px;
+        .Col1Row1_inner {
+          padding: 10px;
+          .top {
+            display: flex;
+            align-items: center;
+            .top1 {
+              .live-move {
+                border-radius: 5px;
+              }
+              .live_text {
+                // background-color: var(--primary);
+                color: #c20c12;
+                font-weight: 700;
+                font-size: 16px;
+                width: fit-content;
+                padding: 3px 6px;
+                border-radius: 4.16108px;
+                margin-bottom: 0;
+              }
+              #div2 {
+                width: 6px;
+                height: 2.5px;
+                background: var(--primary);
+                position: absolute;
+                animation: destraSinistra3 1s linear infinite alternate;
+                animation-direction: alternate;
+                // margin-left: 16%;
+              }
+
+              @keyframes destraSinistra3 {
+                // 0% {
+                //   left: 0;
+                //   // right: 50px;
+                // }
+                // 100% {
+                //   left: 20;
+                //   // right: 50px;
+                //   // transform: translateX(-100%);
+                // }
+                0% {
+                  left: 6px;
+                  // right: 50px;
+                }
+                100% {
+                  left: 50px;
+                  // right: 50px;
+                  // transform: translateX(-100%);
+                }
+              }
+            }
+            .top2 {
+              h6 {
+                font-size: 11px;
+                font-weight: 500;
+                white-space: nowrap;
+                margin: 0;
+                padding: 4px;
+              }
+            }
+          }
+          .teamA,
+          .teamB {
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            margin-top: 4px;
+            margin-bottom: 4px;
+            .logo {
+              display: flex;
+              align-items: center;
+              h5 {
+                // display: inline;
+                padding: 0px 4px;
+                margin: 0;
+                font-weight: 600;
+                font-size: 18px;
+                color: #00008b;
+              }
+              h5:hover {
+                color: var(--primary);
+              }
+            }
+            .team_name {
+              color: black;
+            }
+            .score {
+              color: var(--primary);
+              text-align: center;
+              h5 {
+                display: inline;
+                font-weight: 700;
+                font-size: 20.4387px;
+              }
+              h6 {
+                // font-weight: 500;
+                // font-size: 14px;
+                margin: 0;
+                font-weight: 700;
+                font-size: 20px;
+              }
+            }
+          }
+          .teamB {
+            // opacity: 0.7;
+          }
+          .won {
+            h6 {
+              font-size: 13px;
+              font-weight: 400;
+              margin: 0;
+              color: #82868f;
+              // white-space: nowrap;
+            }
+          }
+        }
+      }
+      .Col1Row2 {
+        .Col1Row2_inner {
+          // padding: 10px;
+          border-bottom: 1px solid #cccccc;
+          // border-left: 2px solid #cccccc;
+          // .batting,
+          // .bowling {
+          //   font-size: 16px;
+          //   color: #c20c12;
+          //   font-weight: 700;
+          // }
+          // .playerDetail {
+          //   // display: flex;
+
+          //   .batting,
+          //   .bowling {
+          //     h6 {
+          //       font-weight: 700;
+          //       color: #c20c12;
+          //       margin: 4px 0px;
+          //     }
+          //     .battingPlayer,
+          //     .bowlingPlayer {
+          //       // display: flex;
+          //       // justify-content: space-between;
+          //       // width: 75%;
+          //       margin: 4px 0px;
+          //       .batting_Position,
+          //       .bowling_Position {
+          //         display: flex;
+          //         justify-content: space-between;
+
+          //         span {
+          //           font-size: large;
+          //           color: #c20c12;
+          //         }
+          //         .blank_dot {
+          //           visibility: hidden;
+          //         }
+
+          //         h5 {
+          //           color: black;
+          //           font-weight: 600;
+          //           font-size: 14px;
+          //           margin: 2px 2px;
+          //         }
+          //       }
+          //     }
+          //   }
+          // }
+
+          // .playedetails {
+          //   display: flex;
+          //   .playedetails_col1 {
+          //     display: flex;
+          //     width: 40%;
+          //     text-align: center;
+          //   }
+
+          //   .playedetails_col2,
+          //   .playedetails_col3 {
+          //     width: 30%;
+          //     text-align: center;
+          //   }
+          //   align-items: center;
+          //   .dot_icon {
+          //     color: #c20c12;
+          //     vertical-align: baseline;
+          //   }
+          //   .dot_blank {
+          //     visibility: hidden;
+          //   }
+          //   h5 {
+          //     display: inline;
+          //     margin: 0;
+          //   }
+          //   .playername {
+          //     font-size: 14px;
+          //     font-weight: 700;
+          //     margin: 5px 0px;
+          //   }
+          // }
+
+          .playerDetail {
+            .dot_icon {
+              color: #c20c12;
+              vertical-align: text-bottom;
+            }
+            .dot_blank {
+              visibility: hidden;
+            }
+            .BattingName {
+              color: #c20c12;
+            }
+            .heading {
+              color: #505562;
+              text-align: center;
+            }
+            .headingData {
+              text-align: center;
+            }
+            .Batting {
+              margin: 0px;
+              .name {
+                width: 50%;
+                font-weight: 700 !important;
+              }
+              .second {
+                color: #878a93;
+              }
+              td {
+                border-color: white;
+                border-style: solid;
+                border-width: 0;
+              }
+              thead {
+                background-color: #e5e5e5;
+              }
+
+              .table {
+                margin-bottom: 0px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+    .col2 {
+      border-left: 1px #cccccc;
+    }
+  }
+  .Row3 {
+    background-color: #e5e5e5;
+    // .Row3_inner {
+    // padding: 0px 10px;
+    display: flex;
+    .footer {
+      display: flex;
+    }
+    .footerscore2,
+    .footerscore3 {
+      border-left: 2px solid #cecece;
+    }
+    h5 {
+      font-size: 15px;
+      color: #757983;
+      padding: 10px;
+    }
+
+    // }
+  }
+
+  @media (max-width: 767px) {
+    .footerscore3 {
+      border-top: 1px solid #cccccc;
+      border-left: none !important;
+      padding: 0;
+    }
+    #div2 {
+      margin-left: 0% !important;
+    }
+    @keyframes destraSinistra3 {
+      0% {
+        left: 3%;
+      }
+      100% {
+        left: 9%;
+        transform: translateX(-100%);
+      }
+    }
+  }
+  @media (max-width: 400px) {
+    @keyframes destraSinistra3 {
+      0% {
+        left: 3%;
+      }
+      100% {
+        left: 13%;
+        transform: translateX(-100%);
+      }
+    }
+  }
+}

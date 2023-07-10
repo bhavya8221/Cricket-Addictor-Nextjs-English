@@ -1,0 +1,51 @@
+{
+  "name": "cricket-addictor-next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p 3001",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@coreui/react": "^4.8.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.13.7",
+    "@nextui-org/react": "^1.0.0-beta.13",
+    "@react-oauth/google": "^0.11.0",
+    "@reduxjs/toolkit": "^1.9.5",
+    "axios": "^1.4.0",
+    "bootstrap": "^5.3.0",
+    "firebase": "^9.23.0",
+    "gapi-script": "^1.2.0",
+    "jwt-decode": "^3.1.2",
+    "moment": "^2.29.4",
+    "next": "13.4.8",
+    "react": "18.2.0",
+    "react-async": "^10.0.1",
+    "react-bootstrap": "^2.8.0",
+    "react-calendar": "^4.3.0",
+    "react-dom": "18.2.0",
+    "react-facebook-login": "^4.1.1",
+    "react-gtm-module": "^2.0.11",
+    "react-icons": "^4.8.0",
+    "react-multi-carousel": "^2.8.4",
+    "react-multi-date-picker": "^4.0.0",
+    "react-redux": "^8.1.1",
+    "react-slick": "^0.29.0",
+    "react-slugify": "^3.0.2",
+    "recharts": "^2.6.2",
+    "redux": "^4.2.1",
+    "saas": "^1.0.0",
+    "sass": "^1.56.0",
+    "sass-loader": "^13.2.2",
+    "sharp": "^0.32.1",
+    "zustand": "^4.3.9"
+  },
+  "devDependencies": {
+    "eslint": "8.40.0",
+    "eslint-config-next": "13.4.1"
+  }
+}

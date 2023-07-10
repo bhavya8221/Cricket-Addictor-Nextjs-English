@@ -1,0 +1,273 @@
+.iplLeader_section {
+    .loader {
+        background-color: rgb(240, 240, 240);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+        width: 100%;
+    }
+    .link_color {
+        color: black;
+        text-decoration: none;
+    }
+    .view {
+        text-decoration: none;
+        color: #000000;
+    }
+    .IPL_OG_card {
+        border-radius: 10px 10px 0px 0px;
+        margin-right: 14px;
+        margin-left: 12px;
+        margin-bottom: 60px;
+    }
+    .IPL_custom_card {
+        width: 100%;
+        height: 400px;
+        padding: 0px;
+        border-radius: 10px;
+    }
+    .IPL_full_card {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    .IPL_upper {
+        width: 100%;
+        height: auto;
+        border-radius: 10px 10px 0px 0px;
+        // background: linear-gradient(256.23deg, #fa601f 45.4%, #e5c322 99.95%);
+    }
+    .imgIPLF {
+        width: 20px;
+        height: 20px;
+        border-radius: 30/2;
+    }
+    .imgIPLP {
+        // width: 210px;
+        width: 100%;
+        height: 290px;
+        margin-top: -52px;
+        margin-left: -12px;
+        position: sticky;
+        z-index: 1;
+    }
+    .imgIPLPF {
+        width: auto;
+        height: 15px;
+    }
+    .ipl_team_name {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 0px !important;
+        vertical-align: middle;
+        margin-left: 5px;
+        color: var(--light);
+        white-space: nowrap;
+    }
+    .ipl_team {
+        width: 100%;
+        // margin-left: 20%;
+        display: flex;
+        align-items: center;
+    }
+    .ipl_run {
+        font-size: 30px;
+        font-weight: 700;
+        color: var(--light);
+        margin-bottom: 0px !important;
+    }
+    .player_name {
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--light);
+        margin-bottom: 0px !important;
+        white-space: nowrap;
+    }
+    .one_div {
+        margin-top: -48px;
+        margin-bottom: 48px;
+        margin-left: 10px;
+        position: sticky;
+        z-index: 1;
+    }
+    .one_text {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 0px !important;
+        color: black;
+        margin-top: -20px;
+    }
+     .ipl_team_left{
+        // text-align: center;
+        margin: 20px 40px;
+    }
+    .ipl_footer_text {
+        text-transform: capitalize;
+        font-size: 16px;
+        margin-bottom: 0px !important;
+        color: var(--light);
+        font-weight: 400;
+        align-self: center;
+        // margin-left: 20%;
+    }
+    .IPL_upper_row {
+        // width: 49%;
+        width: 47%;
+        height: auto;
+    }
+    .flex_row {
+        display: flex;
+        flex-direction: row;
+    }
+    .IPL_upper_row_right {
+        width: 50%;
+        height: auto;
+        text-align: right;
+    }
+    .IPL_upper_cap_row {
+        background-color: var(--light);
+        // height: 50px;
+        padding: 10px;
+        display: flex;
+        width: 100%;
+        position: sticky;
+        z-index: 1;
+        font-size: xx-large;
+        align-items: center;
+        border-radius: 10px 10px 0px 0px;
+        box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .cap_text {
+        font-size: 15px;
+        color: #193684;
+        font-weight: 700;
+        // margin-left: 10px;
+        margin-bottom: 0px !important;
+    }
+    .test_text {
+        text-align: center;
+        margin-bottom: 0px !important;
+        font-size: 18px;
+        color: #193684;
+        font-weight: 700;
+        margin-left: 10px;
+        background-color: var(--light);
+        border-radius: 5px;
+        box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+        padding: 2px 12px 1px 12px;
+    }
+    .IPL_triangleCorner {
+        width: 0px;
+        height: 0px;
+        background-color: transparent;
+        border-style: solid;
+        border-right-width: 60px;
+        border-top-width: 60px;
+        border-right-color: transparent;
+        border-top-color: var(--light);
+        transform: rotate(90deg);
+        border-bottom: hidden;
+        border-left: hidden;
+        transform: rotate(0deg);
+    }
+    .IPL_lower {
+        width: 100%;
+        height: 28%;
+    }
+    .first_row {
+        height: 33%;
+        background-color: var(--light);
+        align-items: center;
+    }
+    .second_row {
+        height: 33%;
+        background-color: #d9d9d9;
+        align-items: center;
+    }
+    .third_row {
+        height: 33%;
+        background-color: var(--light);
+        align-items: center;
+    }
+    .col_name {
+        font-size: 16px;
+        color: black;
+        font-weight: 400;
+        margin-bottom: 0px !important;
+        /* margin-left: 20%; */
+    }
+    .col_first {
+        width: 15%;
+        text-align: center;
+    }
+    .col_second {
+        width: 50%;
+    }
+    .col_third {
+        width: 20%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+    .col_fourth {
+        width: 15%;
+        text-align: center;
+        text-transform: capitalize;
+    }
+    .IPLBtn {
+        background-color: #f5f5f5;
+        color: black;
+        font-size: 15px;
+        padding: 2px 25px;
+        border-radius: 10px;
+        border: 0px solid #000000;
+        filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.25));
+        margin: 10px 0px;
+        cursor: pointer;
+        width: 100%;
+        height: 40px;
+    }
+    @media only screen and (max-width: 550px) {
+        .imgIPLP {
+            width: 190px;
+            height: 190px;
+            margin-top: -22px;
+            margin-left: -30px;
+            position: sticky;
+            z-index: 1;
+        }
+        .ipl_footer_text {
+            font-size: 10px !important;
+        }
+        .ipl_run {
+            font-size: 20px !important;
+        }
+        .ipl_team_name {
+            font-size: 12px !important;
+        }
+        .imgIPLF {
+            width: 15px !important;
+            height: 15px !important;
+            border-radius: 15/2 !important;
+        }
+        .player_name {
+            font-size: 12px !important;
+        }
+        .one_div {
+            margin-bottom: 0px !important;
+        }
+        .col_name {
+            font-size: 12px;
+        }
+        .IPL_custom_card {
+            height: 304px;
+        }
+    }
+    @media only screen and (max-width: 767px) {
+        .IPL_OG_card{
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+}

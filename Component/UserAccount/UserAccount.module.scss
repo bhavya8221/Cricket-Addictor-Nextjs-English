@@ -1,0 +1,314 @@
+.userAccount_desktop {
+  .userAccount_background {
+    height: 100%;
+    display: flex;
+    // position: fixed;
+    width: 100%;
+    .background {
+      width: 60%;
+    }
+    .form {
+      width: 40%;
+      background-color: var(--primary);
+      display: flex;
+      padding: 70px;
+      h1 {
+        //   margin-top: 70px;
+        color: var(--light);
+        font-weight: 700;
+      }
+      h2 {
+        font-weight: 700;
+        color: #d9e1f0;
+      }
+      span {
+        padding: 4px;
+        border-radius: 8px;
+      }
+      .welcome {
+        // margin: 30px;
+        width: 100%;
+        // margin-top: 70px;
+        margin: auto;
+      }
+      .form_component {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        background: #ffffff;
+        box-shadow: -1.5px -1.5px 2px rgba(0, 0, 0, 0.25),
+          1.5px 1.5px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+        .LoginSign_Button {
+          display: flex;
+          text-align: -webkit-center;
+          cursor: pointer;
+          h4 {
+            color: var(--light);
+            font-weight: 700;
+            padding: 10px;
+            margin: 0;
+            font-size: 22px;
+          }
+          .Loginbutton {
+            width: 50%;
+            border-top-left-radius: 5px;
+          }
+          .SignUpbutton {
+            border-top-right-radius: 5px;
+            width: 50%;
+          }
+        }
+      }
+      .copyright {
+        h5 {
+          color: var(--light);
+          text-align: center;
+          margin: 0 !important;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+.userAccount_mobile {
+  .userAccount_background_mobile {
+    height: 100%;
+    display: flex;
+    position: fixed;
+    width: 100%;
+  }
+  .background_mobile {
+    height: 100%;
+    width: 100%;
+  }
+  .mobile-content {
+    width: 100%;
+    position: absolute;
+    top: 115px;
+    display: flex;
+    .mobile_content_left {
+      width: 22%;
+      margin-top: 133px;
+      .loginbutton,
+      .signupbutton {
+        border-top-right-radius: 5px !important;
+        border-bottom-right-radius: 5px !important;
+        h5 {
+          margin-top: 8px;
+          color: var(--light);
+          padding: 4px;
+          text-align: right;
+          font-size: 18px;
+
+          font-weight: 700;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}
+.mobile_content_right {
+  margin-left: auto;
+  width: 70%;
+  margin-right: auto;
+  .greeting {
+    color: var(--light);
+    margin-left: 64px;
+    h2,
+    h4 {
+      margin: 0;
+    }
+  }
+}
+@media (min-width: 767px) {
+  .userAccount_desktop {
+    display: block;
+  }
+  .userAccount_mobile,
+  .mobileView {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .playerimg {
+    width: 55%;
+    height: 50%;
+    position: sticky;
+    margin-bottom: -140px;
+    margin-top: 37px;
+  }
+  .arrowLogin {
+    display: flex;
+    justify-content: space-between;
+  }
+  #arrowlogin:before,
+  #arrowsignup:before {
+    content: "";
+    height: 0;
+    display: block;
+    border-color: transparent var(--primary) transparent transparent;
+    border-width: 20px;
+    border-style: solid;
+    position: absolute;
+    left: 113px;
+    margin-top: -41px;
+  }
+  .userAccount_desktop {
+    display: none;
+  }
+  .mobile_login {
+    margin-left: 20px;
+    margin-top: 84px;
+    h5 {
+      text-align: right;
+    }
+  }
+  .mobile_signup {
+    margin-left: 20px;
+    margin-top: 70px;
+    h5 {
+      text-align: right;
+    }
+  }
+  @media (max-width: 397px) {
+    .greeting {
+      margin-top: 20px;
+    }
+    .mobile_login {
+      margin-left: 20px;
+      margin-top: 79px;
+    }
+    .mobile_signup {
+      margin-left: 20px;
+      // margin-top: 50px;
+    }
+    // h4 {
+    //   font-size: 17px;
+    // }
+    // h2 {
+    //   font-size: 18px;
+    // }
+    // h5 {
+    //   font-size: 13px;
+    // }
+
+    .mobile_content_left {
+      .loginbutton,
+      .signupbutton {
+        h5 {
+          font-size: 10px !important;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 443px) and (max-width: 767px) {
+  .mobileView_login {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+  }
+  .Login_Button,
+  .SignUp_Button {
+    text-shadow: grey 1px 0 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+      rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  }
+}
+
+.mobileView_login {
+  background-image: url("../../public/Images/userAccountBackgroun.png");
+  background-repeat: round;
+  background-size: contain;
+  .mobileView_login_container {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    place-items: center;
+    .mobileView_login_left {
+      width: 30%;
+      .main_login_button,
+      .main_signup_button {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      #arrow4:after {
+        content: "";
+        height: 0;
+        display: block;
+        border-color: transparent var(--primary) transparent transparent;
+        border-width: 15px;
+        border-style: solid;
+      }
+      .Login_Button,
+      .SignUp_Button {
+        color: var(--light);
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        margin-bottom: 4px;
+        width: 70px;
+        text-align: right;
+        h5 {
+          margin: 0;
+          padding: 4px;
+          font-weight: 700;
+          font-size: 15px;
+        }
+      }
+    }
+    .mobileView_login_right {
+      width: 70%;
+      .top {
+        height: 500px;
+        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px 0px 0px 20px;
+        // background: linear-gradient(to right, #5272b0 0%, #283d6a 100%);
+        background: linear-gradient(to right, #D03F38 0%, var(--primary) 100%);
+
+
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+
+        // background: rgba(208, 63, 56, 0.01);
+        // backdrop-filter: blur(81.1px);
+        /* Note: backdrop-filter has minimal browser support */
+
+        border-radius: 20px 0px 0px 20px;
+      }
+      .header {
+        height: 100px;
+        display: flex;
+        align-items: center;
+      }
+      .greeting {
+        color: var(--light);
+        margin-left: 35px;
+        h3,
+        h4 {
+          margin: 0;
+          font-weight: 700;
+        }
+        h3 {
+          font-size: 20px;
+        }
+        h4 {
+          font-size: 13px;
+        }
+      }
+      .center_box {
+        padding: 10px;
+      }
+      .footer {
+        h6 {
+          margin-top: 10px;
+          text-align: center;
+          font-weight: 700;
+          color: black;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.SquadVideo_section {
+    .team_a {
+        margin-left: 3px;
+        background-color: var(--light);
+        align-self: center;
+        padding: 4px 12px 4px 12px;
+        border-radius: 5px;
+        margin-bottom: 0px;
+    }
+    .justi {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .H3 {
+        color: var(--primary);
+        font-style: italic;
+        font-size: 28px;
+        margin-top: 20px;
+    }
+    .team_b {
+        margin-right: 3px;
+        background-color: var(--light);
+        align-self: center;
+        padding: 4px 12px 4px 12px;
+        border-radius: 5px;
+        margin-bottom: 0px;
+    }
+    .player_team {
+        justify-content: space-evenly;
+        height: 40px;
+        background-color: var(--primary);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+    }
+    ul li p::before {
+        content: "" !important;
+        color: unset !important;
+    }
+    ul li p {
+        line-height: 1.2 !important;
+        color: #101729;
+        padding-right: 0px !important;
+        font-weight: bolder;
+    }
+    @media only screen and (max-width: 767px) {
+        .justi {
+            flex-direction: column;
+        }
+    }
+}

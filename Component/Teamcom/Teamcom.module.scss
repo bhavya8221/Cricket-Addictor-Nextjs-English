@@ -1,0 +1,129 @@
+.Teamcom {
+    .winn-img {
+        text-align: center;
+    }
+    .plr {
+        height: 115px;
+        width: 115px;
+    }
+    .player_team {
+        justify-content: space-evenly;
+        height: 40px;
+        background-color: var(--primary);
+        border-radius: 5px;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+    .H3 {
+        color: var(--primary);
+        font-style: italic;
+        font-size: 28px;
+        // margin-top: 20px;
+    }
+    .justi {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .team_a {
+        margin-left: 3px;
+        background-color: var(--light);
+        align-self: center;
+        padding: 4px 12px 4px 12px;
+        border-radius: 5px;
+        margin-bottom: 0px;
+    }
+    .team_b {
+        margin-right: 3px;
+        background-color: var(--light);
+        align-self: center;
+        padding: 4px 12px 4px 12px;
+        border-radius: 5px;
+        margin-bottom: 0px;
+    }
+    .winn-cen {
+        text-align: center;
+        padding-top: 10px;
+    }
+    .child-winn {
+        margin: 0px 30px 0px 40px;
+        padding: 20px 0px;
+        background-image: linear-gradient(#1B2133, #f2f2f200);
+    }
+    .Teamcom_section {
+        margin-left: 45px;
+        margin-right: 45px;
+        box-shadow: -4px 0px 4px rgba(0, 0, 0, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .Team {
+        margin-left: 45px;
+        margin-right: 45px;
+    }
+    .child-winn h4 {
+        background-color: #fff;
+        padding: 2px 0;
+        font-size: 20px;
+    }
+    .child-winn h5 {
+        font-size: 17px;
+    }
+    .boder-box {
+        border-radius: 5px;
+        background-color: var(--light);
+        margin: 0px 15px 0px 15px;
+        box-shadow: 0 8px 10px 2px rgba(128, 128, 128, 0.264);
+        margin-bottom: 40px;
+    }
+    .text-red {
+        color: var(--primary);
+        margin-left: 20px;
+        width: 80%;
+    }
+    .text-grey {
+        color: gray;
+        margin-left: 20px;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .Teamcom {
+        .justi {
+            margin-left: 0px !important;
+            margin-right: 0px !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .Teamcom {
+        .Teamcom_section {
+            margin-left: 0px !important;
+            margin-right: 0px !important;
+            padding-top: 10px !important;
+            padding-bottom: 0px !important;
+        }
+        .justi {
+            margin-left: 0px !important;
+            margin-right: 0px !important;
+            flex-direction: column;
+        }
+        .H3 {
+            font-size: 24px;
+        }
+        .player_team {
+            margin-left: 0px !important;
+            margin-bottom: 10px !important;
+        }
+        .team_a {
+            font-size: 10px;
+        }
+        .team_b {
+            font-size: 10px;
+        }
+        .Team {
+            margin: 0px 0px 0px 0px !important;
+        }
+    }
+}

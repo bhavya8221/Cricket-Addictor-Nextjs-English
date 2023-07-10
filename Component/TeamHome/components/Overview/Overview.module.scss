@@ -1,0 +1,403 @@
+.Overview {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  // @include themify($themes) {
+  //   background: themed("bodyBackgroundColor");
+  //   // color: themed('textColor');
+  // }
+  .News{
+
+    li{
+      width: 269px !important;
+    }
+  }
+  
+  .TeamRanking,
+  .PlayerRanking,
+  .News,
+  .Squad {
+    // margin-top: 20px;
+    // margin-bottom: 20px;
+  }
+  .preNextButton {
+    display: flex;
+    width: 20%;
+    margin: 0px 10px;
+    background-color: #d9d9d9;
+    justify-content: center;
+    .preMoreBtn {
+      background-color: var(--primary);
+      border: none;
+      margin: 3px 5px;
+      border-radius: 100px;
+
+      svg {
+        font-size: 37px;
+        color: white;
+      }
+    }
+  }
+  .Squad_View_full_table {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    padding: 10px 10px;
+    border: 1px solid grey;
+    h6 {
+      margin: 0;
+      font-size: 15px;
+      text-align: center;
+      font-weight: 500;
+    }
+  }
+  .Squad_justify {
+    display: flex;
+    justify-content: space-between;
+  }
+  .Squad_Heading {
+    display: flex;
+    align-items: center;
+  }
+  .Squad {
+    .topButton {
+      display: flex;
+      align-items: center;
+    }
+    .react-multi-carousel-list {
+      // height: 400px;
+    }
+    .react-multiple-carousel__arrow {
+      position: absolute;
+      outline: 0;
+      transition: all 0.5s;
+      z-index: 1000;
+      background: white !important;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+      opacity: 1 !important;
+      cursor: pointer;
+    }
+    .react-multiple-carousel__arrow::before {
+      color: var(--primary) !important;
+      font-size: 15px;
+      font-weight: 900;
+    }
+    .react-multiple-carousel__arrow--right {
+      right: 45px !important;
+      bottom: 2px !important;
+      z-index: 1;
+      display: none;
+    }
+    .react-multiple-carousel__arrow--left {
+      right: 95px !important;
+      left: unset !important;
+      bottom: 2px !important;
+      z-index: 1;
+      display: none;
+    }
+    .react-multi-carousel-dot button {
+      width: 28px !important;
+      height: 8px !important;
+      border-radius: 0% !important;
+      border-width: 0px !important;
+      border-color: white !important;
+      background: #a7a29e !important;
+    }
+    .react-multi-carousel-dot--active button {
+      background: var(--primary) !important;
+    }
+  }
+  .team_link_color {
+    color: black;
+    text-decoration: none;
+  }
+  .News {
+    .react-multi-carousel-item {
+      // width: 375px !important;
+    }
+  }
+  .Squad {
+    .react-multi-carousel-item {
+      width: 375px !important;
+    }
+  }
+  .TeamRanking {
+    .types {
+      text-align: -webkit-center;
+      margin-top: 13px;
+      height: 10%;
+    }
+    .types2 {
+      display: flex;
+      flex-direction: row;
+      // text-align: right;
+      // float: right;
+      // margin-right: -47px;
+      // height: 80%;
+    }
+    .types2 h1 {
+      font-size: 200px;
+      font-weight: 700;
+      color: var(--light);
+      opacity: 0.7;
+    }
+    .types2 h2 {
+      font-size: 50px;
+      font-weight: 700;
+      color: var(--light);
+      opacity: 0.7;
+    }
+    .types3 {
+      margin-top: 240px;
+    }
+    .types3 h5 {
+      color: var(--light);
+      font-size: 15px;
+      font-weight: 700;
+    }
+    .test_text {
+      text-align: center;
+      width: 85px;
+      font-size: 18px;
+      color: #193684;
+      font-weight: 700;
+      margin-left: 10px;
+      background-color: var(--light);
+      margin-bottom: 0px !important;
+      border-radius: 5px;
+      box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+      padding: 2px 12px 1px 12px;
+      text-transform: uppercase;
+    }
+    .IPL_OG_card {
+      border-radius: 10px 10px 0px 0px;
+      // width: 98%;
+      // margin-right: 30px;
+      // margin-left: 30px;
+      // margin-bottom: 60px;
+      // margin-left: 30px;
+      // margin-right: 30px;
+    }
+    .IPL_full_card {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
+    .IPL_custom_card {
+      width: 100%;
+      // height: 300px;
+      padding: 0px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      background: linear-gradient(
+        180deg,
+        rgba(25, 54, 132, 0) 0%,
+        #193684 100%
+      );
+    }
+    .IPLBtn {
+      background-color: #f5f5f5;
+      color: black;
+      font-size: 15px;
+      padding: 10px 25px;
+      border-radius: 10px;
+      border: 0px solid #000000;
+      filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.25));
+      // margin: 10px 0px;
+      cursor: pointer;
+      width: 100%;
+      // height: 40px;
+    }
+  }
+  .mrgn {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  .space {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .link_color {
+    color: var(--primary);
+    text-decoration: none;
+  }
+  .viewall {
+    // margin-left: -95px;
+    margin-right: 10px;
+    padding: 5px 16px;
+    margin-bottom: 0px;
+    // width: 130px;
+    // height: 35px;
+    text-align: center;
+    // padding-top: 7px;
+    color: var(--primary);
+    font-size: 20px;
+    background-color: var(--light);
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .child-disp {
+    position: relative;
+    height: 345px;
+    background-image: linear-gradient(
+      180deg,
+      rgba(217, 217, 217, 0.31) 0%,
+      #193684 100%
+    );
+  }
+  .back_text {
+    font-size: 187px;
+    text-align: center;
+    opacity: 0.5;
+    color: #2a3a84;
+  }
+  .boder-box {
+    border-radius: 5px;
+    background-color: var(--light);
+    margin: 0 0px 0px;
+    box-shadow: 0 8px 10px 2px rgba(128, 128, 128, 0.264);
+    margin-bottom: 30px;
+  }
+  .disp-img {
+    text-align: center;
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    right: 0;
+    z-index: 0;
+  }
+  .disp-img img {
+    width: 186px;
+    height: 200px;
+  }
+  .detials {
+    text-align: center;
+    margin-top: -32px;
+  }
+  .detials h4 {
+    background-color: #fff;
+    padding: 5px 0;
+    color: #f9a70c;
+  }
+  .profiles {
+    padding-bottom: 10px;
+    color: var(--light);
+    cursor: pointer;
+  }
+  @mixin text_commonproperty {
+    color: var(--primary);
+    font-weight: 700;
+    margin-top: 5px;
+  }
+  .IPL__text {
+    @include text_commonproperty;
+    // margin-left: 33px;
+    margin: 0;
+  }
+  .type_group {
+    display: flex;
+    flex-direction: row;
+  }
+  .player_gender {
+    justify-content: space-evenly;
+    width: 250px;
+    height: 50px;
+    background-color: var(--primary);
+    border-radius: 5px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  .icc_type {
+    justify-content: space-evenly;
+    width: 228px;
+    height: 45px;
+    margin-left: 31px;
+    display: flex;
+    flex-direction: row;
+  }
+  @mixin gender_commonproperty {
+    background-color: var(--light);
+    align-self: center;
+    padding: 4px 12px 4px 12px;
+    border-radius: 5px;
+    margin-bottom: 0px;
+  }
+  .mens {
+    @include gender_commonproperty;
+  }
+  .womens {
+    @include gender_commonproperty;
+  }
+  @mixin test_commonproperty {
+    background-color: var(--light);
+    align-self: center;
+    text-align: center;
+    // padding: 12px 12px 12px 12px;
+    margin-bottom: 0px;
+  }
+  .test {
+    cursor: pointer;
+    @include test_commonproperty;
+    border-radius: 5px 0px 0px 5px;
+  }
+  .odi {
+    cursor: pointer;
+    @include test_commonproperty;
+    border-radius: 0px;
+  }
+  .t20 {
+    cursor: pointer;
+    @include test_commonproperty;
+    border-radius: 0px 5px 5px 0px;
+  }
+  @media only screen and (max-width: 550px) {
+    .type_group {
+      flex-direction: column;
+    }
+    .icc_type {
+      margin-left: 20px;
+    }
+    .MuiPaper-root {
+      margin-left: 12px !important;
+      margin-right: 20px !important;
+      width: 94.5% !important;
+    }
+  }
+  @media (min-width: 980px) and (max-width: 1200px) {
+    .back_text {
+      font-size: 205px;
+      margin-bottom: 56px;
+    }
+  }
+  @media (min-width: 767px) {
+    .Squad_View_full_table{
+      display: none;
+    }
+  }
+  @media (max-width: 767px) {
+    .react-multiple-carousel__arrow{
+  display: none !important;
+    }
+    .Squad_View_All,
+    .Squad_T20_ODI {
+      display: none;
+    }
+    .sizes {
+      margin-left: 0px !important;
+      margin-right: 0px !important;
+    }
+    .IPL__text {
+      margin-left: 10px !important;
+    }
+    .IPL_OG_card {
+      margin-right: 15px !important;
+      margin-left: 15px !important;
+    }
+  }
+}

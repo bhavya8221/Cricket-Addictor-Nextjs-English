@@ -1,0 +1,562 @@
+.liveScore_section {
+    // padding-top: 15px;
+    // padding-bottom: 30px;
+    // @include themify($themes) {
+    //     background: themed("bodyBackgroundColor");
+    // }
+    background-color: var(--light);
+    .ScoreFilterrr {
+        display: flex;
+    }
+    .downarrow {
+        display: none;
+    }
+    .filterTypeForAllMobile {
+        visibility: hidden;
+        margin-top: -35px;
+    }
+    .filterForAll {
+        border: 1px solid var(--primary);
+        border-radius: 5px;
+        color: var(--primary);
+        text-align: center;
+        padding: 0px 20px;
+        margin: 0px 18px;
+        height: fit-content;
+        place-self: center;
+        cursor: pointer;
+        p {
+            margin: 0;
+            padding: 0;
+        }
+    }
+    .filterTypeForAll,
+    .filterTypeForAllMobile {
+        border: 1px solid var(--primary);
+        display: flex;
+        color: var(--primary);
+        margin: 0px 20px;
+        height: fit-content;
+        align-self: center;
+        .filtertypename {
+            padding: 11px 10px;
+            font-weight: 700;
+            font-size: 10px;
+            cursor: pointer;
+        }
+    }
+    .scoretype {
+        margin: 8px;
+        justify-content: space-evenly;
+        background-color: var(--primary);
+        border-radius: 5px;
+        display: flex;
+        padding: 5px;
+        flex-direction: row;
+    }
+    .ScoreType_name {
+        align-self: center;
+        cursor: pointer;
+    }
+    .ScoreType_name_list {
+        width: 110px;
+        margin-bottom: 0;
+        text-align: -webkit-center;
+        background: azure;
+        /* padding: 2px 13px; */
+        font-size: 15px;
+        padding: 7px;
+        font-weight: 700;
+        border-radius: 4px;
+        color: var(--primary);
+    }
+    .btns {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .btnText {
+        margin-bottom: 0%;
+        font-weight: 700;
+        font-size: 16.21px;
+    }
+    .filterBtn {
+        margin: 8px 0px;
+        margin: 0px 18px;
+        border: 0.4px solid var(--primary);
+        background-color: var(--light);
+        color: var(--primary);
+        border-radius: 4px;
+        width: 130px;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .vectorIcon {
+        height: 13px;
+        width: 13px;
+        margin-right: 6px;
+    }
+    .Top {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 5px;
+        margin-bottom: 10px;
+        padding-right: 5px;
+    }
+    .closeBtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .closeBtn button {
+        height: 21px;
+        border-radius: 4px;
+        font-size: 11px;
+        width: 21px;
+        padding: 0;
+        margin: 0%;
+    }
+    .TopText {
+        color: var(--primary);
+    }
+    .TopText p {
+        font-weight: 700;
+        font-size: 19.93px;
+        margin-bottom: 0%;
+    }
+    .FilterIcon {
+        height: 17.51px;
+        width: 17.51px;
+        margin-bottom: 4px;
+        margin-right: 6px;
+    }
+    .mid {
+        width: 100%;
+        height: 18rem;
+        display: flex;
+        flex-direction: row;
+    }
+    .leftCol {
+        height: 100%;
+        width: 32%;
+        border: 1px solid #d9d9d9;
+    }
+    .right {
+        width: 68%;
+    }
+    .rightCol {
+        height: 90%;
+        overflow: scroll;
+        margin-right: 0%;
+        margin-left: 4%;
+        width: 96%;
+        border-bottom-style: none;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .rightCol::-webkit-scrollbar {
+        display: none;
+        /* Crome */
+    }
+    .TeamLogo img {
+        height: 23px;
+    }
+    .TeamLogo {
+        width: 97%;
+        display: flex;
+        cursor: pointer;
+        height: 36px;
+        align-items: center;
+        border: 1px solid #d9d9d9;
+    }
+    .bottomBtn {
+        display: flex;
+        justify-content: flex-end;
+        height: 27px;
+    }
+    .rmdp-shadow {
+        box-shadow: none;
+        width: 100%;
+    }
+    .rmdp-top-class {
+        width: 100%;
+    }
+    .rmdp-week {
+        width: 123%;
+    }
+    .rmdp-day-picker {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .rmdp-day.rmdp-today span {
+        background-color: #000000;
+        color: #fff;
+    }
+    .rmdp-day span {
+        border-radius: 19%;
+        bottom: 3px;
+        font-size: 14px;
+        left: 3px;
+        position: absolute;
+        right: 3px;
+        top: 3px;
+    }
+    .rmdp-week-day {
+        color: #cccccc;
+    }
+    .rmdp-arrow-container:hover {
+        background-color: #000000;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        box-shadow: none;
+        height: 16px;
+    }
+    .rmdp-day:not(.rmdp-disabled):not(.rmdp-day-hidden) span:hover {
+        background-color: var(--light);
+        color: #000000;
+    }
+    .rmdp-arrow {
+        border: solid black;
+        border-width: 0 2px 2px 0 !important;
+    }
+    .rmdp-day.rmdp-selected span:not(.highlight) {
+        background-color: #f2f2f2;
+        color: black;
+    }
+    .rmdp-day:hover {
+        background-color: none;
+    }
+    .calenderLogo img {
+        width: max-content;
+        height: max-content;
+    }
+    .calenderLogo {
+        height: 100%;
+        width: 34px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .rmdp-header {
+        font-size: 17px;
+        height: 25px;
+        line-height: 36px;
+        margin-top: -5px;
+    }
+    .rmdp-calendar {
+        width: 100%;
+        padding-top: 0%;
+    }
+    .bottomBtn button {
+        width: 27%;
+        border: 1px solid #d9d9d9;
+        background: #ffffff;
+        margin-right: 4px;
+    }
+    .ul {
+        margin-bottom: 0%;
+    }
+    .li {
+        font-weight: 400;
+    }
+    .RightItems {
+        font-size: 15px;
+        font-weight: 400;
+        width: 100%;
+        cursor: pointer;
+        display: flex;
+        height: 25%;
+        align-items: center;
+        color: #000000;
+        border: 1px solid #d9d9d9;
+        justify-content: center;
+    }
+    .RightUl {
+        width: 100%;
+        height: 65%;
+        margin-bottom: 0;
+    }
+    .first {
+        display: block;
+        height: 100%;
+        margin-right: 11px;
+    }
+    .second {
+        display: block;
+    }
+    .third {
+        display: block;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        height: 95%;
+    }
+    .thirdHide {
+        display: none;
+    }
+    .secondHide {
+        display: none;
+    }
+    .firstHide {
+        display: none;
+    }
+    ul {
+        padding-left: 0%;
+    }
+    li {
+        list-style: none;
+    }
+    li p {
+        margin-bottom: 6px;
+    }
+    .List-items {
+        display: flex;
+        width: 100%;
+        height: 43px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .ArrowIcon {
+        filter: invert(100%);
+        height: 15.32px;
+    }
+    .livescore {
+        background-color: var(--light);
+        align-self: center;
+        padding: 8px 24px 8px 24px;
+        border-radius: 4px;
+        margin-bottom: 0px;
+        font-weight: 600;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    .p {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0%;
+        justify-content: space-between;
+        width: 100%;
+        padding-left: 8px;
+        padding-right: 8px;
+        cursor: pointer;
+    }
+    .recentscore {
+        background-color: var(--light);
+        align-self: center;
+        padding: 8px 8px 8px 8px;
+        border-radius: 4px;
+        margin-bottom: 0px;
+        font-weight: 600;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    .upcomingscore {
+        cursor: pointer;
+        font-size: 14px;
+        background-color: var(--light);
+        align-self: center;
+        padding: 8px 8px 8px 8px;
+        border-radius: 4px;
+        margin-bottom: 0px;
+        font-weight: 600;
+    }
+    @media (max-width: 850px) {
+        .scoretype {
+            margin: 8px;
+            justify-content: space-evenly;
+            background-color: var(--primary);
+            border-radius: 5px;
+            display: flex;
+            flex-direction: row;
+        }
+        .ScoreType_name_list {
+            margin-bottom: 0;
+            text-align: -webkit-center;
+            background: azure;
+            /* padding: 2px 13px; */
+            font-weight: 800;
+            border-radius: 4px;
+            color: var(--primary);
+        }
+        .mid {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .leftCol {
+            width: 96%;
+            display: flex;
+            flex-direction: column;
+            height: auto;
+        }
+        .leftCol ul {
+            display: flex;
+            margin-bottom: 0%;
+        }
+        .right {
+            width: auto;
+            margin-top: 1rem;
+        }
+        .rightCol {
+            width: 100%;
+            height: 11rem;
+            margin-left: 0%;
+        }
+        .RightUl {
+            height: 100%;
+        }
+        .bottomBtn {
+            height: 51px;
+            align-items: flex-end;
+        }
+        .bottomBtn button {
+            margin-bottom: 5px;
+            margin-right: 4px;
+            height: 32px;
+        }
+        .TeamLogo {
+            height: 41px;
+        }
+        .rmdp-week-day {
+            color: #000;
+            cursor: pointer;
+            height: 34px;
+            position: relative;
+            width: 64px;
+        }
+        .rmdp-week {
+            width: 100%;
+        }
+        .rmdp-day {
+            width: 64px;
+        }
+    }
+    @media only screen and (max-width: 585px) {
+        .rmdp-week-day {
+            color: #000;
+            cursor: pointer;
+            height: 34px;
+            position: relative;
+            width: 71px;
+        }
+        .modal-dialog {
+            transform: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .modal-content {
+            display: flex;
+            flex-direction: column;
+            width: 95%;
+        }
+        .rmdp-week {
+            width: 80%;
+        }
+        .rmdp-day-picker div {
+            width: 100%;
+        }
+    }
+    @media (max-width: 545px) {
+        .p {
+            font-size: 15px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding-right: 8px;
+        }
+    }
+    @media (max-width: 425px) {
+        .p {
+            font-size: 11px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+    @media only screen and (max-width: 767px) {
+        .filterBtn {
+            margin-top: 10px;
+        }
+        .ScoreFilterrr {
+            display: block;
+        }
+        .btns {
+            flex-direction: column;
+            display: block;
+        }
+        .scoreBox_section {
+            margin: 15px 0px;
+        }
+        .filterTypeForAllMobile {
+            margin: 0px !important;
+            border-radius: 4px;
+            .filtertypename {
+                font-size: 15px;
+                width: 100%;
+                text-align: center;
+            }
+        }
+        .filterTypeForAll {
+            border-radius: 5px;
+            margin: 0px 18px 0px 18px !important;
+            li {
+                color: var(--primary);
+                text-align: center;
+                font-weight: 700;
+                font-size: 14px;
+            }
+            .filtertypename {
+                width: 100%;
+            }
+        }
+        .livearrow {
+            margin-left: 38px;
+            margin-top: 4px;
+        }
+        .recentarrow {
+            margin-left: 48px;
+            margin-top: 7px;
+        }
+        .upcomingarrow {
+            margin-left: 48px;
+            margin-top: 4px;
+        }
+        .downarrow {
+            display: block;
+            position: absolute;
+        }
+        .scoretype {
+            margin: 13px 0px;
+            width: 100%;
+            border-radius: 0px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        .livescore {
+            border-radius: 3px;
+            font-weight: 700;
+        }
+        .upcomingscore {
+            border-radius: 3px;
+        }
+        .recentscore {
+            border-radius: 3px;
+            padding: 6px 20px 6px 20px;
+        }
+        .ArrowIcon {
+            margin-left: 3px;
+            height: 8.32px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .liveScore_section {
+        padding-top: 0px;
+    }
+}

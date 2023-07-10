@@ -1,0 +1,79 @@
+.mainRecord_section {
+    .rightcell {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        margin-right: 18px;
+        height: auto;
+        background: var(--light);
+        margin-left: 20px;
+        box-shadow: -2px -2px 4px 0px #00000040;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .records_section {
+        margin: 15px;
+    }
+    .pointDescription_section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .pointBall {
+        width: 7px;
+        height: 7px;
+        border-radius: 100%;
+        background: var(--secondary);
+        margin-right: 10px;
+    }
+    .record_description {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: #101729;
+    }
+    .odiHeading {
+        font-style: italic;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 22px;
+        color: var(--secondary);
+        margin-top: 10px;
+    }
+    .secondDescription {
+        margin-top: 10px;
+    }
+    .recordImage {
+        width: 450px;
+        height: 150px;
+        margin-top: 20px;
+    }
+    .centerImg {
+        text-align: center;
+    }
+    @media only screen and (min-width: 320px) and (max-width: 560px) {
+        .records_section {
+            margin-left: 10px;
+        }
+        .pointBall {
+            height: 5px;
+            width: 2%;
+        }
+        .record_description {
+            font-size: 12px;
+            line-height: 15px;
+        }
+        .odiHeading {
+            font-size: 13px;
+            line-height: 16px;
+        }
+        .secondDescription {
+            margin-top: 5px;
+        }
+        .recordImage {
+            width: 265px;
+            height: 110px;
+            margin-top: 10px;
+        }
+    }
+}

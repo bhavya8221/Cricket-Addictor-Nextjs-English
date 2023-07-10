@@ -1,0 +1,36 @@
+.teamNews_section {
+  // @include themify($themes) {
+  //     background: themed("bodyBackgroundColor");
+  //     // color: themed('textColor');
+  //   }
+  .MuiListItem-gutters {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .link_color {
+    color: black;
+    width: 100%;
+    text-decoration: none;
+  }
+  .flexContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    // width: auto;
+  }
+  .rightcol ul li p::before {
+    content: "" !important;
+    color: unset !important;
+  }
+  .rightcol ul li p {
+    line-height: 1.2 !important;
+    color: #101729;
+    padding-right: 0px !important;
+    font-weight: bolder;
+  }
+  @media only screen and (max-width: 767px) {
+    .cols {
+      width: -webkit-fill-available;
+    }
+  }
+}

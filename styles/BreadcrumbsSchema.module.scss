@@ -1,0 +1,31 @@
+/* breadcrumbs.css */
+
+.breadcrumb {
+  background-color: #f5f5f5;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.breadcrumb-item {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.breadcrumb-item a {
+  color: #333;
+  text-decoration: none;
+}
+
+.breadcrumb-item.active {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.breadcrumb-item.active::after {
+  content: '';
+  display: inline-block;
+  margin-left: 5px;
+  border-top: 5px solid #007bff;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+}

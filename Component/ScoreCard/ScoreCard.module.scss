@@ -1,0 +1,257 @@
+@media (max-width: 540px) {
+  .Siderbtn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+
+.Siderbtn {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.Siderbtn p {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: smaller;
+  justify-content: center;
+  margin-bottom: 0%;
+  margin-right: 1.5%;
+  margin-left: 1.5%;
+  background-color: var(--primary);
+  border-radius: 4px;
+  font-weight: 700;
+  height: 27px;
+  color: #ffffff;
+}
+
+.Siderbtn p:hover {
+  background-color: #ffffff;
+  color: var(--primary);
+}
+
+.Menu {
+  border-radius: 3px;
+  box-shadow: 2px 2px 4px 0px #00000040;
+  cursor: pointer;
+  background-color: var(--primary);
+  height: 39px;
+  width: 18rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parent_score {
+  margin-top: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+
+  .tablebG{
+    background-color: var(--primary);
+
+  }
+  .loader {
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 100%;
+  }
+  .top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .heading p {
+    font-weight: 700;
+    margin-bottom: 0%;
+    font-size: 22px;
+    // font-style: italic;
+    color: var(--primary);
+  }
+  .selected {
+    background-color: #ffffff;
+    color: var(--primary);
+  }
+  @media (max-width: 540px) {
+    .top {
+      flex-direction: column;
+    }
+    .Siderbtn {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .heading {
+      width: 100%;
+    }
+  }
+}
+
+.TableMain {
+  box-shadow: -2px 0px 4px 0px #00000040;
+  border-radius: 5px;
+  .TableHead {
+    background-color: var(--primary);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .shadow {
+    box-shadow: 2px 2px 4px 0px #00000040;
+  }
+  .TableHead th {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .align {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  .cd {
+    width: 58.2%;
+    display: contents;
+  }
+  tr {
+    display: flex;
+    align-items: center;
+  }
+  .Tablebottom {
+    color: #ffffff;
+    font-weight: 700;
+    background-color: var(--primary);
+    white-space: nowrap;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .cd th {
+    padding-left: 6px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #00008b;
+    .Total{
+      color: white !important;
+    }
+  }
+  .display {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .display1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .display th {
+    width: 50%;
+  }
+  .display1 th {
+    width: 50%;
+  }
+  .cd td {
+    font-size: 13px;
+  }
+  .tableBottom {
+    box-shadow: -2px 0px 4px 0px #00000040;
+    border-radius: 13px;
+  }
+  @media (min-width: 841px) {
+    .cd td {
+      white-space: nowrap;
+    }
+  }
+  @media (max-width: 554px) {
+    .TableHead th {
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 11px;
+      white-space: nowrap;
+    }
+    .cd th {
+      font-size: 11px !important;
+    }
+    td {
+      font-size: 11px !important;
+    }
+    .cd td {
+      font-size: 9px !important;
+    }
+    .hide {
+      display: none;
+    }
+  }
+  @media (min-width: 750px) {
+    .display1 {
+      display: none;
+    }
+  }
+  @media (max-width: 750px) {
+    .display {
+      display: none;
+      .align {
+        font-size: smaller;
+      }
+    }
+  }
+  @media (max-width: 785px) {
+    .cd {
+      display: grid;
+    }
+    .cd th {
+      width: 100%;
+    }
+    .cd td {
+      width: 100%;
+      font-size: smaller;
+    }
+    .cd th {
+      padding-left: 0px;
+    }
+  }
+  @media (max-width: 425px) {
+    .TableHead th {
+      font-size: 9px;
+    }
+  }
+  @media (min-width: 800px) {
+    .div {
+      display: -webkit-inline-box;
+      flex-wrap: wrap;
+    }
+    .div2 p {
+      margin-bottom: 0%;
+    }
+    .div2 p {
+      display: inline-flex;
+    }
+  }
+  @media (max-width: 800px) {
+    .div2 p {
+      margin-bottom: 7px;
+      display: flex;
+      width: max-content;
+    }
+    .div2 b {
+      display: flex;
+      width: 49px;
+    }
+    .div2 {
+      display: flex;
+    }
+  }
+}

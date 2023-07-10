@@ -1,0 +1,599 @@
+.home {
+  .livecardInMobile {
+    display: none;
+  }
+  .react-multi-carousel-item {
+    width: 324px !important;
+  }
+  .react-multi-carousel-list {
+    display: block !important;
+  }
+  z-index: 0;
+  // @include themify($themes) {
+  //   background: themed("headerFooterBackground");
+  // }
+  background: var(--light);
+  .ScrollRow {
+    display: flex;
+    flex-flow: nowrap;
+  }
+  img{
+    width: 100%;
+  }
+  .jss2 {
+    background-color: #e8e9ef !important;
+    margin-bottom: 4px !important;
+  }
+  .PrivateTabIndicator-colorPrimary-6 {
+    background-color: #e8e9ef !important;
+    margin-bottom: 4px !important;
+  }
+  .HomeRow {
+    margin-top: 15px;
+  }
+  .blankCard {
+    height: 167px;
+    margin-right: 15px;
+    margin-left: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px rgb(0 0 0 / 25%), 3px 3px 3px rgb(0 0 0 / 25%);
+  }
+  .blankText {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+  }
+  .loader {
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 100%;
+  }
+  .textUppercase {
+    text-transform: uppercase;
+  }
+  .textCapitalize {
+    text-transform: capitalize;
+  }
+  .livescore_btn {
+    display: none;
+  }
+  .filterDiv {
+    place-content: center !important;
+    // display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    justify-content: flex-end;
+    z-index: 1;
+    li {
+      list-style: none;
+    }
+  }
+  .filterForAll {
+    border-radius: 5px 0px 0px 5px;
+    background-color: var(--light);
+    border: 0.5px solid rgba(255, 80, 2, 0.5);
+    color: var(--primary);
+    text-align: center;
+    width: 90px;
+    cursor: pointer;
+    p {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .filterTypeForAllMobile {
+    visibility: hidden;
+    margin-top: -35px;
+  }
+  .matches {
+    font-family: "Roboto Condensed" !important;
+    display: none;
+  }
+  .filterTypeForAll,
+  .filterTypeForAllMobile {
+    font-family: "Roboto Condensed" !important;
+    border-radius: 5px 0px 0px 5px;
+    justify-content: center;
+    background-color: var(--light);
+    display: flex;
+    color: var(--primary);
+    .filtertypename {
+      padding: 11px 10px;
+      font-weight: 700;
+      font-size: 13px;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+  .fix-css {
+    .react-multi-carousel-list {
+      display: block !important;
+    }
+  }
+  .ltsMoreBtn {
+    background-color: var(--primary);
+    color: var(--light);
+    font-size: 15px;
+    width: 100%;
+    height: 44px;
+    font-weight: 700;
+    border-width: 0px;
+    cursor: pointer;
+  }
+  @mixin text_commonproperty {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 22px;
+  }
+  .latest__text {
+    text-transform: uppercase;
+    @include text_commonproperty;
+  }
+  // .slick-arrow {
+  //   background: var(--primary);
+  //   width: 40px;
+  //   height: 40px;
+  //   margin: 0px -8px;
+  // }
+  // .iplRow {
+  //   margin: 0px 20px;
+  // }
+  // .slick-prev:before,
+  // .slick-next:before {
+  //   font-size: 40px;
+  //   margin-right: 32px;
+  //   position: absolute;
+  //   right: -32px;
+  //   top: -1px;
+  //   border-radius: 50px;
+  //   color: var(--primary);
+  //   opacity: 1;
+  // }
+  // .slick-prev {
+  //   display: block;
+  //   margin-top: 140px;
+  //   background: transparent;
+  //   /* right: 36px; */
+  //   border-radius: 50px;
+  //   position: absolute;
+  //   left: 580px;
+  //   padding: 15px;
+  // }
+  //   .slick-prev:before {
+  // padding: 30px;
+  //   }
+  // .slick-next {
+  //   display: block;
+  //   border-radius: 50px;
+
+  //   margin-top: 140px;
+  //   background: transparent;
+  //   /* right: 36px; */
+  //   position: absolute;
+  //   left: 645px;
+  //   padding: 15px;
+  // }
+  .buttonsection {
+    display: flex;
+    margin-top: 10px;
+    .morenewsbutton {
+      width: 80%;
+      margin-right: 10px;
+    }
+  }
+  .preNextButton {
+    display: flex;
+    width: 20%;
+    // margin: 0px 10px;
+    background-color: #d9d9d9;
+    justify-content: center;
+    .preMoreBtn {
+      background-color: var(--primary);
+      border: none;
+      margin: 3px 5px;
+      border-radius: 100px;
+
+      svg {
+        font-size: 37px;
+        color: white;
+      }
+    }
+  }
+  .IPL__text {
+    text-transform: uppercase;
+    @include text_commonproperty;
+  }
+  // .slick-arrow {
+  //   display: none;
+  // }
+  .react-multiple-carousel__arrow {
+    position: absolute;
+    outline: 0;
+    transition: all 0.5s;
+    z-index: 1000;
+    background: #d9d9d9 !important;
+    // box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    opacity: 1 !important;
+    cursor: pointer;
+  }
+  .react-multiple-carousel__arrow {
+    position: absolute;
+    /* outline: 0; */
+    /* transition: all .5s; */
+    border-radius: 0px;
+    z-index: 1000;
+    border: 0;
+    background: rgba(0, 0, 0, 0.5);
+    min-width: 46px;
+    min-height: 43px;
+    opacity: 1;
+  }
+  .react-multiple-carousel__arrow::before {
+    background: var(--primary);
+    border-radius: 50px;
+    height: 31px;
+    width: 30px;
+    padding: 8px;
+    color: rgb(255, 255, 255) !important;
+    font-size: 15px;
+    font-weight: 900;
+  }
+  .react-multiple-carousel__arrow--right {
+    right: 0 !important;
+    bottom: 3px !important;
+    z-index: 1;
+    padding: 5px;
+  }
+  .react-multiple-carousel__arrow--left {
+    right: 45px !important;
+    left: unset !important;
+    bottom: 3px !important;
+    padding: 5px;
+
+    z-index: 1;
+  }
+  .react-multi-carousel-dot button {
+    width: 28px !important;
+    height: 8px !important;
+    border-radius: 0% !important;
+    border-width: 0px !important;
+    border-color: white !important;
+    background: #a7a29e !important;
+  }
+  .react-multi-carousel-dot--active button {
+    background: var(--primary) !important;
+  }
+  .MuiTabs-fixed {
+    background-color: var(--primary) !important;
+  }
+  .MuiTab-textColorPrimary {
+    color: rgb(255 255 255 / 70%) !important;
+  }
+  .MuiTab-textColorPrimary.Mui-selected {
+    color: white !important;
+  }
+  .PrivateTabIndicator-colorPrimary-2 {
+    background-color: white !important;
+    margin-bottom: 2px;
+  }
+
+  .PrivateTabIndicator-colorPrimary-14 {
+    background-color: white !important;
+    margin-bottom: 2px;
+  }
+  .MuiTabs-flexContainer {
+    margin-top: 50px !important;
+    margin-left: 10px;
+  }
+  .MuiTab-root {
+    min-height: 0px !important;
+    font-weight: 600 !important;
+    text-transform: none !important;
+    font-size: 18px !important;
+  }
+  .MuiTabs-root {
+    border-radius: 10px 10px 0px 0px !important;
+  }
+  .MuiPaper-root {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px 10px 0px 0px !important;
+  }
+  .MuiPaper-elevation1 {
+    box-shadow: unset !important;
+  }
+  .type_group {
+    display: flex;
+    flex-direction: row;
+  }
+  .player_gender {
+    justify-content: space-evenly;
+    width: 210px;
+    background-color: var(--primary);
+    border-radius: 5px;
+    margin: 25px 5px;
+    padding: 6px 1px;
+    display: flex;
+    flex-direction: row;
+  }
+  .icc_type {
+    justify-content: space-between;
+    background-color: #d9d9d9;
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+    margin: 25px 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  @mixin gender_commonproperty {
+    background-color: var(--light);
+    align-self: center;
+    padding: 4px 10px 4px 10px;
+    border-radius: 5px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .mens {
+    @include gender_commonproperty;
+    padding: 4px 18px 4px 18px;
+  }
+  .NewsScrollStyle {
+    height: 470px;
+    overflow-y: scroll;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(6, calc(54% - 38px));
+    grid-template-rows: minmax(153px, 1fr);
+  }
+  .NewsScrollStyle::-webkit-scrollbar {
+    display: none;
+    /* Crome */
+  }
+  .NewsScrollStyle {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+  .womens {
+    @include gender_commonproperty;
+  }
+  @mixin test_commonproperty {
+    background-color: var(--light);
+    align-self: center;
+    text-align: center;
+    padding: 14px 24px;
+    margin-bottom: 0px;
+    width: 100px;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  .test {
+    @include test_commonproperty;
+    border-radius: 5px 0px 0px 5px;
+  }
+  .odi {
+    @include test_commonproperty;
+    border-radius: 0px;
+  }
+  .t20 {
+    @include test_commonproperty;
+    border-radius: 0px 5px 5px 0px;
+  }
+  .link_color {
+    color: black;
+    text-decoration: none;
+  }
+  @media only screen and (min-width: 767px) {
+    .mobileViewLivecard {
+      display: none;
+    }
+    .loader {
+      background-color: var(--light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 500px;
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 550px) {
+    .type_group {
+      flex-direction: column;
+    }
+    .icc_type {
+      // margin-left: 20px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .desktopViewLivecard {
+      display: none;
+    }
+    .mobileViewLivecard {
+      height: 350px;
+      overflow: scroll;
+    }
+    .col_two {
+      margin: 18px 0px;
+      
+    }
+    .LiveLatestCard_card {
+      margin: 5px 0px !important;
+    }
+    .LiveScoreCardLatest {
+      margin: 10px 0px;
+    }
+    @mixin text_commonproperty {
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 16px;
+    }
+    .latest__text {
+      text-transform: uppercase;
+      @include text_commonproperty;
+    }
+    .IPL__text {
+      @include text_commonproperty;
+    }
+    .NewsScrollStyle {
+      height: 100% !important;
+    }
+    .icc_type {
+      margin: 0px 7px;
+      margin-bottom: 4px;
+      // width: 100%;
+    }
+    .test,
+    .odi,
+    .t20 {
+      width: 33%;
+      padding: 11px 0px;
+    }
+    .HomeRow {
+      margin: 0;
+      padding: 0;
+    }
+    .MuiTabs-flexContainer {
+      margin-top: 16px !important;
+      margin-left: 0px;
+      justify-content: space-between;
+    }
+    .ScrollRow {
+      height: 400px;
+      margin-bottom: 8px;
+      overflow: scroll;
+      flex-direction: column;
+    }
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    .player_gender {
+      margin: 6px;
+    }
+    .fix-css {
+      .react-multi-carousel-list {
+        display: flex !important;
+      }
+    }
+    .blankCard {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    .slide {
+      position: sticky;
+      z-index: 111;
+    }
+    .btn {
+      border-radius: 0px;
+      background-color: var(--primary);
+      color: var(--light);
+      font-weight: 700;
+      width: 100%;
+    }
+    .react-multiple-carousel__arrow--right {
+      bottom: -35px !important;
+      // display: none !important;
+    }
+    .react-multiple-carousel__arrow--left {
+      bottom: -35px !important;
+      // display: none !important;
+    }
+    .react-multi-carousel-list {
+      position: static !important;
+    }
+    .livescore_btn {
+      display: block;
+      width: 100%;
+      margin-top: -5px;
+    }
+    .filterDiv {
+      justify-content: center;
+    }
+    .filterTypeForAllMobile {
+      margin: 1px 8px;
+      border-radius: 4px;
+      .filtertypename {
+        font-size: 15px;
+        width: 100%;
+        text-align: center;
+      }
+    }
+    .filterTypeForAll .filtertypename,
+    .home .filterTypeForAllMobile .filtertypename {
+      padding: 6px 10px;
+    }
+    .matches .filtertypename,
+    .home .filterTypeForAllMobile .filtertypename {
+      padding: 6px 10px;
+    }
+    .filterDiv {
+      margin-top: 0px;
+    }
+    .matches {
+      background-color: var(--light);
+      font-weight: 700;
+      display: flex;
+      padding: 0px 10px;
+      border-radius: 5px;
+      width: -webkit-fill-available;
+      justify-content: center;
+      .filtertypename {
+        li {
+          // text-align: center;
+
+          font-size: 16px;
+          font-weight: 700;
+        }
+        // text-align: center;
+        // padding: 11px 10px 0px 10px;
+        font-weight: 700;
+        font-size: 10px;
+        cursor: pointer;
+        // width: 100%;
+      }
+    }
+    .filterTypeForAll {
+      // margin: 0px 8px;
+      border-radius: 5px;
+      // border: 0.1px solid var(--primary);s
+      border: 0.1px solid #f4eeee;
+      filter: drop-shadow(0px 9px 35px rgba(0, 0, 0, 0.1));
+      width: -webkit-fill-available;
+      font-size: 16px;
+      font-weight: 900;
+      margin-top: -11px;
+      li {
+        font-size: 16px;
+        font-weight: 900;
+        color: var(--primary);
+      }
+      .filtertypename {
+        width: 100%;
+      }
+    }
+    .NewsScrollStyle {
+      height: 470px;
+      overflow-y: scroll;
+      display: grid;
+      grid-gap: 0px;
+      grid-template-columns: repeat(12, calc(91% - 62px));
+      grid-template-rows: minmax(153px, 1fr);
+    }
+  }
+
+  @media only screen and (min-width: 767px) {
+    .react-multiple-carousel__arrow--right {
+      // display: none !important;
+    }
+    .react-multiple-carousel__arrow--left {
+      // display: none !important;
+    }
+  }
+}

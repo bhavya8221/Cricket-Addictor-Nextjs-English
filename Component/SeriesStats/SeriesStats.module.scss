@@ -1,0 +1,135 @@
+.seriesStats_section {
+  // @include themify($themes) {
+  //   background: themed("bodyBackgroundColor");
+  //   // color: themed("textColor");
+  // }
+  background-color: white;
+  .RowGrid {
+    padding-top: 20px;
+    margin: 10px;
+    justify-content: space-between;
+    .ColGrid {
+      // padding-right: 10px;
+    }
+  }
+  .title_overflow {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .ads-bx {
+    height: 100%;
+    background-color: black;
+  }
+  .ads-bx h4 {
+    color: var(--light);
+    padding: 10px;
+  }
+  .schedule_text {
+    color: var(--primary);
+    width: auto;
+    margin-right: 10px;
+    font-style: italic;
+    font-weight: 700;
+  }
+  .series_title {
+    // @include themify($themes) {
+    //   // color: themed("textColor");
+    // }
+    // color: black;
+    font-weight: 700;
+    font-size: 24px;
+    width: auto;
+    margin-right: 10px;
+  }
+  .Rt20 {
+    background-color: var(--light);
+    align-self: center;
+    padding: 4px 12px 4px 12px;
+    border-radius: 5px;
+    margin-bottom: 0px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .underline {
+    background-color: rgb(0, 0, 0);
+    height: 2px;
+    // margin-left: 22px;
+    // margin-right: 22px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    width: auto;
+  }
+  .Rplayer_formats_new {
+    justify-content: space-evenly;
+
+    background-color: var(--primary);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+  }
+  .fil {
+    text-align: -webkit-right;
+  }
+  .Sicc_type {
+    margin: 10px 0px;
+    justify-content: space-between;
+    background-color: #d9d9d9;
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+  }
+  .Steam {
+    background-color: var(--light);
+    align-self: center;
+    text-align: center;
+    padding: 9px 12px 9px 12px;
+    border-radius: 5px 0px 0px 5px;
+    margin-bottom: 0px;
+
+    width: 50%;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer !important;
+  }
+  .Sbowling {
+    background-color: var(--light);
+    align-self: center;
+    text-align: center;
+    padding: 9px 14px 9px 12px;
+    border-radius: 0px 5px 5px 0px;
+    // border-radius: 0px 0px 0px 0px; when ur added 3rd button
+    margin-bottom: 0px;
+    width: 50%;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer !important;
+  }
+  .Sallrounder {
+    background-color: var(--light);
+    align-self: center;
+    text-align: center;
+    padding: 9px 12px 9px 12px;
+    border-radius: 0px 5px 5px 0px;
+    margin-bottom: 0px;
+    width: auto;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  @media only screen and (max-width: 767px) {
+    .fil {
+      text-align: -webkit-left;
+      margin-bottom: 10px;
+    }
+    .Sicc_type {
+      height: 40px;
+    }
+    .series_title {
+      font-size: 14px;
+    }
+  }
+}

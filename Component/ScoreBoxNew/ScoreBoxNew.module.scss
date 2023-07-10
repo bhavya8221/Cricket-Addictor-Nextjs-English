@@ -1,0 +1,78 @@
+.scoreBoxNEW_section {
+    .score_box {
+        display: flex;
+    }
+    .wid_size {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .underlines {
+        margin: 10px 0px 8px 0px !important;
+    }
+    .first_col_box {
+        padding-right: 0px !important;
+        padding-bottom: 0px !important;
+        padding-top: 0px !important;
+    }
+    .second_col_box {
+        border: 0.8px dashed var(--secondary);
+        height: 100%;
+    }
+    .ads {
+        background-color: #d9d9d9;
+        height: 99%;
+    }
+    .adColor {
+        background-color: var(--secondary);
+        color: var(--light);
+        font-size: 14px;
+        width: fit-content;
+        padding: 1px 5px 0px 5px;
+    }
+    .marginSection {
+        margin: 0px 10px;
+    }
+    .heading_scoreBox {
+        color: var(--primary);
+        text-transform: uppercase;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-weight: 700;
+    }
+    .date_heading_scoreBox {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-weight: bold;
+    }
+    .date_scoreBox {
+        // @include themify($themes) {
+        //     // background: themed("bodyBackgroundColor");
+        //     // color: themed('textColor');
+        // }
+        color: #343b4c;
+        margin-left: 22px;
+        margin-top: 15px;
+        // margin-bottom: -10px;
+    }
+    .link_color {
+        color: black;
+        text-decoration: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .scoreBox_section {
+        .respon {
+            margin-top: 0px !important;
+        }
+        .res_w {
+            margin-left: 0px !important;
+            margin-right: 0px !important;
+        }
+        .marginSection {
+            margin-left: 0px !important;
+        }
+    }
+}

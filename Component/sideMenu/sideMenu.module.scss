@@ -1,0 +1,136 @@
+.offcanvas-body::-webkit-scrollbar {
+  display: none;
+  /* Crome */
+}
+
+// hr{
+//   margin: 2px !important;
+// }
+
+.offcanvas-body {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.SideMenu {
+  .scrollView {
+    overflow: scroll;
+  }
+  .scrollView::-webkit-scrollbar {
+    display: none;
+    /* Crome */
+  }
+  .scrollView {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+  .link {
+    text-decoration: none;
+  }
+
+  h6 {
+    color: orangered;
+    text-align: right;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .Search {
+    padding-bottom: 10px;
+  }
+  .form-control {
+    position: relative;
+    background-color: #e9eaf4;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 4px;
+  }
+  .search_icon {
+    position: absolute;
+    display: flex;
+    margin-top: -25px;
+    margin-left: 8px;
+  }
+  .sectionList {
+    margin: 10px;
+  }
+  .sidemenuButton {
+    display: flex;
+    background-color: #e9eaf4;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    text-align: start;
+    margin: 15px 0px 15px 0px;
+    padding: 7px;
+    cursor: pointer;
+    align-items: center;
+  }
+  .sidemenuButtonSection,
+  .sidemenuButtonSectionFantasy {
+    // border-bottom: 1px solid rgb(216, 212, 212);
+    display: flex;
+    // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    text-align: start;
+    margin: 5px 0px 5px 0px;
+    cursor: pointer;
+    align-items: center;
+  }
+  .SectionFantsay {
+    background-color: var(--light);
+    display: flex;
+
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    text-align: start;
+    margin-bottom: 6px;
+    cursor: pointer;
+    align-items: center;
+  }
+
+  .sidemenuDropDownButton {
+    background-color: #f4f4f9;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    text-align: start;
+    margin: 5px 0px 5px 0px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    align-items: center;
+  }
+  .icon1 {
+    font-size: 20px;
+    align-items: center;
+    margin: 0px 4px 0px 4px;
+  }
+  .icon {
+    font-size: 20px;
+    align-items: center;
+    // margin: 0px 7px 0px 9px;
+  }
+  h5 {
+    font-size: 15px;
+    font-weight: 600;
+    
+    margin: 0px 3px;
+  }
+  @media only screen and (max-width: 767px) {
+    .footer_list {
+      padding-bottom: 70px;
+    }
+  }
+  @media (max-width: 500px) {
+    .fotter_list_divide {
+      display: none;
+    }
+  }
+}

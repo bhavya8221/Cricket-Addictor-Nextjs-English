@@ -1,0 +1,111 @@
+.menuButton_section {
+  .text_uppercase {
+    text-transform: uppercase;
+  }
+  .menu_row {
+    padding: 10px 0px;
+    overflow: scroll;
+    background-color: #d9d9d9;
+    height: 60px;
+    display: flex;
+    align-content: flex-start;
+    flex-direction: column;
+  }
+  .menu_row::-webkit-scrollbar {
+    display: none;
+    /* Crome */
+  }
+  .menu_row {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+  .MenusSectionTitle {
+    background-color: var(--primary);
+    width: fit-content;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    // text-align: center;
+  }
+  .fontSize {
+    font-size: 22px !important;
+  }
+  .MenusSectionTitle h2 {
+    white-space: nowrap;
+    font-style: italic;
+    color: var(--light);
+    margin-left: 33px;
+    margin-right: 10px;
+    // margin-top: 15px;
+    margin-bottom: 0px;
+    font-size: 23px;
+  }
+  .MenusSectionItems {
+    overflow: scroll;
+    height: 100%;
+    width: fit-content;
+    background-color: #d9d9d9;
+    display: flex;
+    flex-direction: row;
+  }
+  .MenusSectionItems::-webkit-scrollbar {
+    display: none;
+    /* Crome */
+  }
+  .MenusSectionItems {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+  .menuItem {
+    color: black;
+    font-weight: 700;
+    margin-bottom: 0px;
+    align-self: center;
+    background-color: var(--light);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  @media only screen and (max-width: 767px) {
+    .menu_row {
+      overflow: scroll;
+      flex-direction: column;
+      align-content: flex-start;
+      height: 40px;
+      width: 100%;
+    }
+    // .MenusSectionTitle {
+    //     width: 20%;
+    // }
+    // .MenusSectionItems {
+    //     width: 80% !important;
+    // }
+    .MenusSectionTitle h2 {
+      // margin-top: 12px !important;
+      margin-left: 22px;
+      font-size: 14px !important;
+    }
+    .menuItem {
+      font-size: 12px;
+      padding: 5px 5px 5px 5px !important;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1120px) {
+    .MenusSectionTitle h2 {
+      // margin-top: 19px !important;
+      font-size: 18px !important;
+    }
+  }
+  @media only screen and (max-width: 410px) {
+    .MenusSectionTitle h2 {
+      // margin-top: 12px !important;
+      font-size: 14px !important;
+    }
+  }
+}
