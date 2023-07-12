@@ -63,8 +63,6 @@ export default function ForgotPassword() {
         : activeStep + 1;
     setActiveStep(newActiveStep);
   };
-
-
   const handleVerifyOTP = () => {
     VerifyOtpAPI(formData.username, formData.otp)
       .then((res) => {

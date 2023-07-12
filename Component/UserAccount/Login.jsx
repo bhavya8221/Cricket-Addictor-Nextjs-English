@@ -60,7 +60,6 @@ const Login = () => {
                                 ? "Please Enter Required Fields"
                                 : res.response.data.message,
                 });
-
                 setTimeout(() => {
                     setShowAlert(false);
                 }, 7000);
@@ -88,13 +87,9 @@ const Login = () => {
     const responseFacebook = (response) => {
         SetUserResponse(response);
     };
-
     const componentClicked = (data) => {
     };
-
-
     useEffect(() => {
-
         if (userResponse !== undefined)
             googleLoginAPI(
                 userResponse.name,
@@ -139,11 +134,7 @@ const Login = () => {
                 console.log(e)
             });
     }, [userResponse]);
-
-
-
     return (
-
         <>
             {showAlert && (
                 <DescriptionAlerts text={alertConfig.text} type={alertConfig.type} />
@@ -195,7 +186,6 @@ const Login = () => {
                         className={styles.continue_with}
                     >
                         <div className={styles.linediv1} />
-
                         <div>
                             <p
                                 className={styles.continue}
@@ -207,7 +197,6 @@ const Login = () => {
 
                         <div className={styles.linediv2} />
                     </div>
-
                     <div className={styles.social_icon}>
                         {router.asPath === "/login/" ? (
                             <>
@@ -247,7 +236,6 @@ const Login = () => {
                             </>
                         ) : null}
                     </div>
-
                     <div className={styles.login_form_bottom}>
                         <h5>i’m a new user.&nbsp;</h5>
                         <h5>

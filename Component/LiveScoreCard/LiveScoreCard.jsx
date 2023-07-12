@@ -12,7 +12,6 @@ import v44 from "../../public/Images/v44.png";
 
 import axios from "axios";
 import { useEffect } from "react";
-import DescriptionAlerts from "../../Common/alert/alert";
 import { Snackbar } from "@mui/material";
 import slugify from "react-slugify";
 import styles from "./LiveScoreCard.module.scss";
