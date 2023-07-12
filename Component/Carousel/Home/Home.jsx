@@ -230,6 +230,7 @@ function Home() {
 
     iPLHomeLeader(dataList.data.IPL[0].cid)
       .then((res) => {
+        console.log(res,"ipl home")
         setIplHomeData(res.data.data);
       })
       .catch((e) => {});

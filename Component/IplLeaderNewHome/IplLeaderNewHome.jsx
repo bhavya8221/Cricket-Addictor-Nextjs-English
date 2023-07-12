@@ -5,11 +5,8 @@ import noPlayer from "../../public/Images/no-player.png";
 import Image from "next/image";
 
 function IplLeaderNewHome(props) {
-
-
-
+console.log(props,"dataa")
   function handleIPL() {
-    
     navigate(
       `/ipl/ipl-2023/${props.data[0].cid}/stats/`
     );
@@ -63,7 +60,7 @@ function IplLeaderNewHome(props) {
                             className={styles.IplLeaderNew_imgIPLF}
                           />
                           <h2 className={styles.IplLeaderNew_ipl_team_name}>
-                            {}({props.data[0].team.abbr})
+                            {props.data[0].team.abbr}
                           </h2>
                         </div>
 
@@ -125,10 +122,10 @@ function IplLeaderNewHome(props) {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
+                <tr>
                     <td>2</td>
                     <td className={styles.IplLeaderNew_player}>
-                      {/* <h6> {props.data[1].player.title} </h6> */}
+                      <h6> {props.data[1].player.title} </h6>
                     </td>
                     <td>
                       <div style={{ display: "flex", alignItems: "center" }}>
@@ -137,10 +134,10 @@ function IplLeaderNewHome(props) {
                           alt="images"
                           className={styles.IplLeaderNew_imgIPLF}
                         />{" "}
-                        {/* {props.data[1].team.abbr} */}
+                        {props.data[1].team.abbr}
                       </div>
                     </td>
-                    <td>
+                    {/* <td>
                       {props.data[1].types_key === "batting_most_runs"
                         ? props.data[1].runs
                         : props.data[1].types_key ===
@@ -153,8 +150,7 @@ function IplLeaderNewHome(props) {
                           "bowling_best_bowling_figures"
                         ? props.data[1].bestinning
                         : ""}
-                    
-                    </td>
+                    </td> */}
                   </tr>
                   <tr>
                     <td>3</td>
