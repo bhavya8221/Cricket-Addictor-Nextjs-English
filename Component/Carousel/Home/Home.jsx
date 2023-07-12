@@ -225,15 +225,16 @@ function Home() {
         setNewsData(res.data.data);
       })
       .catch((e) => {
-        // console.log(e,"yhaa errro")
+        console.log(e)
       });
 
     iPLHomeLeader(dataList.data.IPL[0].cid)
       .then((res) => {
-        console.log(res,"ipl home")
         setIplHomeData(res.data.data);
       })
-      .catch((e) => {});
+      .catch((e) => {
+        console.log(e)
+      });
 
     iCCRankingHomePage(
       value === 0 ? activeGroupsType : "",
@@ -243,30 +244,39 @@ function Home() {
       .then((res) => {
         setICCHome(res.data.data);
       })
-      .catch((e) => {});
+      .catch((e) => {
+        console.log(e)
+      });
 
     if (match === "live") {
       newLiveMatchApi(matchFilter)
         .then((res) => {
           setScoreData(res.data.data);
         })
-        .catch((e) => {});
+        .catch((e) => {
+          console.log(e)
+        });
     }
     if (match === "completed") {
       newRecentMatchApi(matchFilter === "all" ? "" : matchFilter)
         .then((res) => {
           setScoreData(res.data.data);
         })
-        .catch((e) => {});
+        .catch((e) => {
+          console.log(e)
+        });
     }
     if (match === "upcoming") {
       newUpcommingMatchApi(matchFilter === "all" ? "" : matchFilter)
         .then((res) => {
           setScoreData(res.data.data);
         })
-        .catch((e) => {});
+        .catch((e) => {
+          console.log(e)
+        });
     }
   }, [matchFilter, match, dataList, activeGroupsType, gender]);
+
   return (
     <>
       <Head>
@@ -279,12 +289,11 @@ function Home() {
         />
         <link rel="canonical" href={HOST} />
       </Head>
-
       <div className={styles.home}>
         <Grid.Container gap={2}>
           <Grid xs={12} md={8} className="row">
             <div className={`"col-md-8" ${styles.col_one}`}>
-            {CarouselData.length === 0 ? null : (
+              {CarouselData.length === 0 ? null : (
                 <ImageSlider CarouselData={CarouselData} />
               )}
               <div className={styles.filterDiv}>
@@ -403,10 +412,10 @@ function Home() {
               <div className={styles.mobileViewLivecard}>
                 <div>
                   {Object.keys(ScoreData).map((item) => {
-                    return ScoreData[item].map((item2,index) => {
+                    return ScoreData[item].map((item2, index) => {
                       return (
                         <LiveScoreCardLatest
-                        key={index}
+                          key={index}
                           data={item2}
                           type="live-matches"
                           location="home"
@@ -420,10 +429,10 @@ function Home() {
               <div className={styles.desktopViewLivecard}>
                 <Slider ref={sliderRef3} {...settingsLiveScore}>
                   {Object.keys(ScoreData).map((item) => {
-                    return ScoreData[item].map((item2,index) => {
+                    return ScoreData[item].map((item2, index) => {
                       return (
                         <LiveScoreCardLatest
-                        key={index}
+                          key={index}
                           data={item2}
                           type="live-matches"
                           location="home"
@@ -480,37 +489,37 @@ function Home() {
                 {NewsData.length === 0
                   ? null
                   : NewsData.map((item, index) => {
-                      return (
-                        <div key={index} className="col-md-12 p-1">
-                          <Link
-                            className={styles.link_color}
-                            href={
-                              item.category === null ||
+                    return (
+                      <div key={index} className="col-md-12 p-1">
+                        <Link
+                          className={styles.link_color}
+                          href={
+                            item.category === null ||
                               item.category.length === 0 ||
                               item.category.slug === null
-                                ? `/${item.news_category}/${item.slug}/`
-                                : `/${item.news_category}/${slugify(
-                                    item.category.slug
-                                  )}/${item.slug}/`
-                            }
-                          >
-                            <NewsCard
-                              title={item.title}
-                              date={item.post_date}
-                              source={
-                                item.attachment.length === 0 ||
+                              ? `/${item.news_category}/${item.slug}/`
+                              : `/${item.news_category}/${slugify(
+                                item.category.slug
+                              )}/${item.slug}/`
+                          }
+                        >
+                          <NewsCard
+                            title={item.title}
+                            date={item.post_date}
+                            source={
+                              item.attachment.length === 0 ||
                                 item.attachment === [] ||
                                 item.attachment === undefined
-                                  ? `${background}`
-                                  : item.attachment[0].file_name === ""
+                                ? `${background}`
+                                : item.attachment[0].file_name === ""
                                   ? `${background}`
                                   : `${HOST}${item.attachment[0].file_uri}/${item.attachment[0].file_name}`
-                              }
-                            />
-                          </Link>
-                        </div>
-                      );
-                    })}
+                            }
+                          />
+                        </Link>
+                      </div>
+                    );
+                  })}
               </Slider>
               <div className={styles.buttonsection}>
                 <div className={styles.morenewsbutton}>
@@ -551,7 +560,7 @@ function Home() {
                 onChange={(event, newValue) => {
                   setValue(newValue);
                 }}
-          
+
               >
                 <Tab style={{ color: "white" }} label="Player Ranking" />
                 <Tab style={{ color: "white" }} label="Team Ranking" />

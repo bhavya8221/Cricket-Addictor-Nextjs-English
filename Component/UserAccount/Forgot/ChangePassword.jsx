@@ -1,19 +1,11 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
-import {Form } from "react-bootstrap";
-import styles from  "./Forgot.module.scss";
+import { Form } from "react-bootstrap";
+import styles from "./Forgot.module.scss";
 const ChangePassword = ({ formData, setFormData }) => {
   const [username, setUsername] = useState("");
   const [otp, setOtp] = useState("");
-  //   const [password, setPassword] = useState("");
-  //   const [confirmPassword, setConfirmPassword] = useState("");
-  // const [activeUsername, setActiveUsername] = useState(true);
-  // const [activeOtp, setActiveOtp] = useState("");
-  // const [activePassword, setActivePassword] = useState("");
-  // const [submit, setsubmit] = useState(true);
-  useEffect(() => {}, []);
-  // console.log("username", username, otp, password, confirmPassword);
 
   return (
     <div className={styles.forgot_form}>
@@ -37,7 +29,6 @@ const ChangePassword = ({ formData, setFormData }) => {
               disabled
             />
           </Form.Group>
-
           <Form.Group className={styles.input_field}>
             <Form.Control
               type="password"
@@ -59,8 +50,6 @@ const ChangePassword = ({ formData, setFormData }) => {
             />
           </Form.Group>
         </Form>
-
-       
       </div>
     </div>
   );

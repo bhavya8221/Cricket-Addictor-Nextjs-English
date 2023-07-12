@@ -10,14 +10,10 @@ import { useRouter } from "next/router";
 
 function ImageSlider(props) {
   const router = useRouter()
-  // function handleNews(value1, value2, value3) {
-  //   window.location.href = `/${value1}/${value2}/${value3}`;
-  // }
-  console.log(props, "props");
   return (
     <>
       <div className={styles.imageSlider_section}>
-        <Carousel interval={200000} fade style={{ marginTop: 10 }}  controls={false}>
+        <Carousel interval={200000} fade style={{ marginTop: 10 }} controls={false}>
           {props.CarouselData.map((item, index) => {
             return (
               <Carousel.Item
@@ -32,7 +28,6 @@ function ImageSlider(props) {
                   router.push(path);
                 }}
               >
-
                 <Image
                   className={`${styles.d_block} w-100 ${styles.slidder}`}
                   src={
@@ -46,46 +41,41 @@ function ImageSlider(props) {
                   }
                   width={100}
                   height={10}
-                  // src={background}
                   alt="Image description"
                 />
-
-
-                <Carousel.Caption className={styles.carouselOption} style={{left:0,right:0,paddingTop:"2px",paddingBottom:"2px",paddingRight:"10px",paddingLeft:"10px"}} >
-                <button
-                  className={styles.newsBtn}
-                  onClick={() => {
-                    const path =
-                      item.category === null || item.category.length === 0
-                        ? `/${item.news_category}/${item.slug}/`
-                        : `/${item.news_category}/${item.category.slug}/${item.slug}/`;
-                    router.push(path);
-                  }}
-                >
-
-
-                  <FaCaretRight size={18} color="var(--light)" />
-                  {item.category === null ||
-                    item.category === [] ||
-                    item.category === {} ||
-                    item.category === ""
-                    ? "Cricket News"
-                    : item.category[0] === undefined
-                      ? item.category.name
-                      : item.category[0].name}
-
-                </button>
-                <p className={styles.title}>
-                  <span
-                    style={{
-                      backgroundColor: "var(--primary)",
-                      color: "white",
+                <Carousel.Caption className={styles.carouselOption} style={{ left: 0, right: 0, paddingTop: "2px", paddingBottom: "2px", paddingRight: "10px", paddingLeft: "10px" }} >
+                  <button
+                    className={styles.newsBtn}
+                    onClick={() => {
+                      const path =
+                        item.category === null || item.category.length === 0
+                          ? `/${item.news_category}/${item.slug}/`
+                          : `/${item.news_category}/${item.category.slug}/${item.slug}/`;
+                      router.push(path);
                     }}
                   >
-                    &nbsp;{item.title}&nbsp;
-                  </span>
-                </p>
-                <p className={styles.date}>{item.post_date}</p>
+                    <FaCaretRight size={18} color="var(--light)" />
+                    {item.category === null ||
+                      item.category === [] ||
+                      item.category === {} ||
+                      item.category === ""
+                      ? "Cricket News"
+                      : item.category[0] === undefined
+                        ? item.category.name
+                        : item.category[0].name}
+
+                  </button>
+                  <p className={styles.title}>
+                    <span
+                      style={{
+                        backgroundColor: "var(--primary)",
+                        color: "white",
+                      }}
+                    >
+                      &nbsp;{item.title}&nbsp;
+                    </span>
+                  </p>
+                  <p className={styles.date}>{item.post_date}</p>
                 </Carousel.Caption>
               </Carousel.Item>
             );

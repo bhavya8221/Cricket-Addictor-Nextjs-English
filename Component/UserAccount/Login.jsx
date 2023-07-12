@@ -10,7 +10,6 @@ import Image from 'next/image';
 import { useGoogleLogin } from '@react-oauth/google';
 import { useEffect } from 'react';
 import axios from 'axios';
-// import ReactFacebookLogin from 'react-facebook-login';
 import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props'
 const Login = () => {
     const router = useRouter()
@@ -18,23 +17,22 @@ const Login = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [userResponse, SetUserResponse] = useState(false);
-
     const [agree, setAgree] = useState(false);
     const checkboxHandler = () => {
         setAgree(!agree);
-      };
+    };
     const handleSubmit = () => {
         if (!agree) {
             setShowAlert(true);
             setAlertConfig({
-              text: "Please agree to the terms and conditions to submit the form.",
-              type:'info'
+                text: "Please agree to the terms and conditions to submit the form.",
+                type: 'info'
             });
             setTimeout(() => {
                 setShowAlert(false);
             }, 7000);
             return;
-          }
+        }
         loginAPI(email, password)
             .then((res) => {
                 localStorage.setItem(
@@ -65,13 +63,10 @@ const Login = () => {
                 setTimeout(() => {
                     setShowAlert(false);
                 }, 7000);
-
-                // console.log("error", res.response.data.message);
             });
     };
     const loginGooglenew = useGoogleLogin({
         onSuccess: async (respose) => {
-            // console.log(respose, "checkk")
             try {
                 const res = await axios.get(
                     "https://www.googleapis.com/oauth2/v3/userinfo",
@@ -81,26 +76,24 @@ const Login = () => {
                         },
                     }
                 );
-                // console.log(res,"1st response")
                 SetUserResponse(res.data);
             } catch (err) {
-                // console.log(err,"response errrrooor");
+                console.log(err)
+
             }
         },
     });
 
     const responseFacebook = (response) => {
-        // console.log(response,"responsefacebook");
         SetUserResponse(response);
     };
 
     const componentClicked = (data) => {
-        // console.log(data,"componentClicked");
     };
 
-    // console.log(userResponse, "newgoogle");
+
     useEffect(() => {
-        // console.log(userResponse,"userResponse")
+
         if (userResponse !== undefined)
             googleLoginAPI(
                 userResponse.name,
@@ -111,7 +104,7 @@ const Login = () => {
                 ""
             )
                 .then((res) => {
-                    console.log("login", res.data.data);
+
                     localStorage.setItem(
                         "authTokenRefreshLogin",
                         res.data.data.tokens.refresh.token
@@ -123,7 +116,7 @@ const Login = () => {
                     window.location.href = "/";
                 })
                 .catch((e) => {
-                    // console.log("login error");
+                    console.log(e)
                 });
         facebookLoginAPI(
             userResponse.name,
@@ -131,7 +124,6 @@ const Login = () => {
             userResponse.userID
         )
             .then((res) => {
-                // console.log("login", res.data.data);
                 localStorage.setItem(
                     "authTokenRefreshLogin",
                     res.data.data.tokens.refresh.token
@@ -143,7 +135,7 @@ const Login = () => {
                 window.location.href = "/";
             })
             .catch((e) => {
-                // console.log("login error");
+                console.log(e)
             });
     }, [userResponse]);
 
@@ -253,7 +245,6 @@ const Login = () => {
                                 />
                             </>
                         ) : null}
-                        {/* <img src={Fb} className={styles.fbIcon} alt="facebook" /> */}
                     </div>
 
                     <div className={styles.login_form_bottom}>

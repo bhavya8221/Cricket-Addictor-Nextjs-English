@@ -117,7 +117,6 @@ function CricketNewsAll(props) {
   function handleClick() {
     setShowMore(!showMore);
   }
-console.log(primarycategory,"check primary category")
 
   return (
     <>

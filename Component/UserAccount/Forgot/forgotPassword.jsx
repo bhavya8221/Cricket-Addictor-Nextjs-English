@@ -7,7 +7,7 @@ import VerifyOtp from "./VerifyOtp";
 import ChangePassword from "./ChangePassword";
 import { useState } from "react";
 import { Button } from "react-bootstrap";
-import styles from  "./Forgot.module.scss";
+import styles from "./Forgot.module.scss";
 // import { Link, useNavigate } from "react-router-dom";
 import { useCallback } from "react";
 import {
@@ -25,9 +25,10 @@ const steps = [
 ];
 
 export default function ForgotPassword() {
+  const router = useRouter()
+  const navigate = router.replace
   const [activeStep, setActiveStep] = React.useState(0);
   const [completed, setCompleted] = React.useState({});
-  // const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
     username: "",
     otp: "",
@@ -38,9 +39,6 @@ export default function ForgotPassword() {
   const [alertConfig, setAlertConfig] = useState({
     text: "",
   });
-
-  // console.log("dattatatatt", formData);
-
   const totalSteps = () => {
     return steps.length;
   };
@@ -60,18 +58,12 @@ export default function ForgotPassword() {
   const handleNext = () => {
     const newActiveStep =
       isLastStep() && !allStepsCompleted()
-        ? // It's the last step, but not all steps have been completed,
-          // find the first step that has been completed
-          steps.findIndex((step, i) => !(i in completed))
+        ?
+        steps.findIndex((step, i) => !(i in completed))
         : activeStep + 1;
     setActiveStep(newActiveStep);
   };
-const router =useRouter()
-  const navigate = router.replace
-  // const Navigation = useCallback(() => {
-  //   let value = "/login/";
-  //   navigate(value);
-  // }, [navigate]);
+
 
   const handleVerifyOTP = () => {
     VerifyOtpAPI(formData.username, formData.otp)
@@ -98,8 +90,6 @@ const router =useRouter()
         setTimeout(() => {
           setShowAlert(false);
         }, 7000);
-
-        // console.log("verifyerror", res.response.data.message);
       });
   };
   const handleChangePassword = () => {
@@ -110,7 +100,6 @@ const router =useRouter()
       formData.confirmPassword
     )
       .then((res) => {
-        // console.log("forggott", res);
         setShowAlert(true);
         setAlertConfig({
           type: "info",
@@ -120,7 +109,6 @@ const router =useRouter()
         setTimeout(() => {
           setShowAlert(false);
         }, 7000);
-        // Navigation();
         navigate("/login")
       })
       .catch((error) => {
@@ -132,13 +120,11 @@ const router =useRouter()
         setTimeout(() => {
           setShowAlert(false);
         }, 7000);
-        // console.log("error", error.response.data.message);
       });
   };
   const handleSendOTP = () => {
     OtpSendAPI(formData.username)
       .then((res) => {
-        // console.log("forggott", res.data.message);
         setShowAlert(true);
         setAlertConfig({
           type: "info",
@@ -162,12 +148,8 @@ const router =useRouter()
         setTimeout(() => {
           setShowAlert(false);
         }, 7000);
-
-        // console.log("error", error.response.data.message);
       });
   };
-  // console.log("passs", formData.password, "confo", formData.confirmPassword);
-
   return (
     <div className="forgot_form">
       {showAlert && (
@@ -203,7 +185,6 @@ const router =useRouter()
                   className={styles.forgot_form_button}
                   style={{ marginLeft: "20px", marginRight: "20px" }}
                   disabled={!formData.username}
-                  // size="sm"
                 >
                   Proceed
                 </Button>
@@ -212,7 +193,7 @@ const router =useRouter()
                   onClick={handleVerifyOTP}
                   className={styles.forgot_form_button}
                   style={{ marginLeft: "20px", marginRight: "20px" }}
-                  // size="sm"
+
                   disabled={!formData.otp}
                 >
                   Next
@@ -222,7 +203,7 @@ const router =useRouter()
                   onClick={handleChangePassword}
                   className={styles.forgot_form_button}
                   style={{ marginLeft: "20px", marginRight: "20px" }}
-                  // size="sm"
+
                   disabled={!formData.password || !formData.confirmPassword}
                 >
                   Login

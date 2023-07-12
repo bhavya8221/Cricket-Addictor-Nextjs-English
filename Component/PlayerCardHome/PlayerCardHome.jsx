@@ -6,12 +6,6 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 function PlayerCardHome(props) {
   const router = useRouter();
-
-  function handleIPL() {
-    // router.replace(
-    //   `/icc-rankings-men/${props.type}/${props.activeGroupsType}/`
-    // );
-  }
   return (
     <>
       {props.data === undefined ? null : (

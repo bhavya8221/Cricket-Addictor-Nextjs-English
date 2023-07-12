@@ -4,7 +4,7 @@ import DescriptionAlerts from "../../Common/alert/alert";
 import styles from "./SignUp.module.scss";
 import Link from "next/link";
 import { signUpAPI } from "../../Constants/Api/Api";
-import {useRouter } from "next/router";
+import { useRouter } from "next/router";
 const SignUp = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -15,7 +15,7 @@ const SignUp = () => {
   const [alertConfig, setAlertConfig] = useState({
     text: "",
   });
-const router =useRouter()
+  const router = useRouter()
 
   const checkboxHandler = () => {
     setAgree(!agree);
@@ -36,7 +36,6 @@ const router =useRouter()
     e.preventDefault();
     signUpAPI(name, email, password, confirmPassword)
       .then((res) => {
-        // console.log(res.data, "response");
         setShowAlert(true);
         setAlertConfig({
           type: "info",
@@ -60,7 +59,6 @@ const router =useRouter()
         setTimeout(() => {
           setShowAlert(false);
         }, 7000);
-        // console.log(res.response.data.message, "error");
       });
   };
 
