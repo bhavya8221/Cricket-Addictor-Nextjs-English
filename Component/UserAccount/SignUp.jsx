@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { Button, Form } from "react-bootstrap";
-import DescriptionAlerts from "../../Common/alert/alert";
+
 import styles from "./SignUp.module.scss";
 import Link from "next/link";
 import { signUpAPI } from "../../Constants/Api/Api";
 import { useRouter } from "next/router";
+import DescriptionAlerts from "../../Common/alert/alert";
 const SignUp = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
