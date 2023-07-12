@@ -3,17 +3,13 @@ import styles from "./IplLeaderNewHome.module.scss";
 import { Card, Table } from "react-bootstrap";
 import noPlayer from "../../public/Images/no-player.png";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 function IplLeaderNewHome(props) {
-console.log(props,"dataa")
-  function handleIPL() {
-    navigate(
-      `/ipl/ipl-2023/${props.data[0].cid}/stats/`
-    );
-  }
+  const router = useRouter()
   return (
     <>
-      {props.data===undefined||props.data[0] === undefined ||props.data[1] === undefined ||props.data[2]===undefined? null : (
+      {props.data === undefined || props.data[0] === undefined || props.data[1] === undefined || props.data[2] === undefined ? null : (
         <div className={styles.IplLeaderNew_section}>
           <Card className={styles.IplLeaderNew_IPL_OG_card}>
             <Card.Body className={styles.IplLeaderNew_IPL_custom_card}>
@@ -30,14 +26,14 @@ console.log(props,"dataa")
                         ? "Aramco Orange Cap"
                         : props.data[0].types_key ===
                           "bowling_top_wicket_takers"
-                        ? "Aramco Purple Cap"
-                        : props.data[0].types_key ===
-                          "batting_most_runs_innings"
-                        ? "Highest Score"
-                        : props.data[0].types_key ===
-                          "bowling_best_bowling_figures"
-                        ? "Best Bowling Perfomance"
-                        : ""}
+                          ? "Aramco Purple Cap"
+                          : props.data[0].types_key ===
+                            "batting_most_runs_innings"
+                            ? "Highest Score"
+                            : props.data[0].types_key ===
+                              "bowling_best_bowling_figures"
+                              ? "Best Bowling Perfomance"
+                              : ""}
                     </h2>
                   </div>
 
@@ -70,14 +66,14 @@ console.log(props,"dataa")
                               ? props.data[0].runs
                               : props.data[0].types_key ===
                                 "bowling_top_wicket_takers"
-                              ? props.data[0].wickets
-                              : props.data[0].types_key ===
-                                "batting_most_runs_innings"
-                              ? props.data[0].highestrun + "*"
-                              : props.data[0].types_key ===
-                                "bowling_best_bowling_figures"
-                              ? props.data[0].bestinning
-                              : ""}
+                                ? props.data[0].wickets
+                                : props.data[0].types_key ===
+                                  "batting_most_runs_innings"
+                                  ? props.data[0].highestrun + "*"
+                                  : props.data[0].types_key ===
+                                    "bowling_best_bowling_figures"
+                                    ? props.data[0].bestinning
+                                    : ""}
                           </h2>
                         </div>
                         <h2 className={styles.IplLeaderNew_ipl_footer_text}>
@@ -122,7 +118,7 @@ console.log(props,"dataa")
                   </tr>
                 </thead>
                 <tbody>
-                <tr>
+                  <tr>
                     <td>2</td>
                     <td className={styles.IplLeaderNew_player}>
                       <h6> {props.data[1].player.title} </h6>
@@ -137,20 +133,20 @@ console.log(props,"dataa")
                         {props.data[1].team.abbr}
                       </div>
                     </td>
-                    {/* <td>
+                    <td>
                       {props.data[1].types_key === "batting_most_runs"
                         ? props.data[1].runs
                         : props.data[1].types_key ===
                           "bowling_top_wicket_takers"
-                        ? props.data[1].wickets
-                        : props.data[1].types_key ===
-                          "batting_most_runs_innings"
-                        ? props.data[1].highestrun
-                        : props.data[1].types_key ===
-                          "bowling_best_bowling_figures"
-                        ? props.data[1].bestinning
-                        : ""}
-                    </td> */}
+                          ? props.data[1].wickets
+                          : props.data[1].types_key ===
+                            "batting_most_runs_innings"
+                            ? props.data[1].highestrun
+                            : props.data[1].types_key ===
+                              "bowling_best_bowling_figures"
+                              ? props.data[1].bestinning
+                              : ""}
+                    </td>
                   </tr>
                   <tr>
                     <td>3</td>
@@ -167,32 +163,35 @@ console.log(props,"dataa")
                         {props.data[2].team.abbr}
                       </div>
                     </td>
-                    {/* <td>
+                    <td>
                       {props.data[2].types_key === "batting_most_runs"
                         ? props.data[2].runs
                         : props.data[2].types_key ===
                           "bowling_top_wicket_takers"
-                        ? props.data[2].wickets
-                        : props.data[2].types_key ===
-                          "batting_most_runs_innings"
-                        ? props.data[2].highestrun
-                        : props.data[2].types_key ===
-                          "bowling_best_bowling_figures"
-                        ? props.data[2].bestinning
-                        : ""}
-                    </td> */}
+                          ? props.data[2].wickets
+                          : props.data[2].types_key ===
+                            "batting_most_runs_innings"
+                            ? props.data[2].highestrun
+                            : props.data[2].types_key ===
+                              "bowling_best_bowling_figures"
+                              ? props.data[2].bestinning
+                              : ""}
+                    </td>
                   </tr>
                 </tbody>
               </Table>
             </Card.Footer>
-            <button className={styles.IplLeaderNew_IPLBtn} onClick={handleIPL}>
-            View Full Table
+            <button className={styles.IplLeaderNew_IPLBtn} onClick={() => {
+              const path = `/ipl/ipl-2023/${props.data[0].cid}/stats/`;
+              router.push(path);
+            }}>
+              View Full Table
             </button>
           </Card>
         </div>
       )}
     </>
-   
+
   );
 }
 

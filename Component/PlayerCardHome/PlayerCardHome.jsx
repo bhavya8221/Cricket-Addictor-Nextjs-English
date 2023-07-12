@@ -8,9 +8,9 @@ function PlayerCardHome(props) {
   const router = useRouter();
 
   function handleIPL() {
-    router.replace(
-      `/icc-rankings-men/${props.type}/${props.activeGroupsType}/`
-    );
+    // router.replace(
+    //   `/icc-rankings-men/${props.type}/${props.activeGroupsType}/`
+    // );
   }
   return (
     <>
@@ -135,7 +135,10 @@ function PlayerCardHome(props) {
                 </tbody>
               </Table>
             </Card.Footer>
-            <button className={styles.IPLBtn} onClick={handleIPL}>
+            <button className={styles.IPLBtn} onClick={() => {
+              const path = `/icc-rankings-men/${props.type}/${props.activeGroupsType}/`;
+              router.push(path);
+            }}>
               View Full Table
             </button>
           </Card>
